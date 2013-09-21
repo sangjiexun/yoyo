@@ -3,7 +3,7 @@
   xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>com.github.nilcy</groupId>
+    <groupId>com.github.nilcy.yoyo</groupId>
     <artifactId>yoyo-application</artifactId>
     <version>7.0.0-SNAPSHOT</version>
   </parent>
@@ -20,19 +20,19 @@
   </properties>
   <dependencies>
     <dependency>
-      <groupId>com.github.nilcy</groupId>
+      <groupId>com.github.nilcy.yoyo</groupId>
       <artifactId>yoyo-framework-screen</artifactId>
       <version>${yoyo-framework-screen.version}</version>
     </dependency>
     <dependency>
-      <groupId>com.github.nilcy</groupId>
+      <groupId>com.github.nilcy.yoyo</groupId>
       <artifactId>yoyo-actor-service</artifactId>
       <version>${yoyo-actor-service.version}</version>
       <type>ejb</type>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>com.github.nilcy</groupId>
+      <groupId>com.github.nilcy.yoyo</groupId>
       <artifactId>yoyo-actor-screen</artifactId>
       <version>${yoyo-actor-screen.version}</version>
       <type>war</type>
@@ -52,12 +52,12 @@
           <generateApplicationXml>true</generateApplicationXml>
           <modules>
             <webModule>
-              <groupId>com.github.nilcy</groupId>
+              <groupId>com.github.nilcy.yoyo</groupId>
               <artifactId>yoyo-actor-screen</artifactId>
               <contextRoot>/yoyo-actor</contextRoot>
             </webModule>
             <ejbModule>
-              <groupId>com.github.nilcy</groupId>
+              <groupId>com.github.nilcy.yoyo</groupId>
               <artifactId>yoyo-actor-service</artifactId>
             </ejbModule>
           </modules>

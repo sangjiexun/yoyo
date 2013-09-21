@@ -4,7 +4,7 @@
   xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>com.github.nilcy</groupId>
+    <groupId>com.github.nilcy.yoyo</groupId>
     <artifactId>yoyo-actor</artifactId>
     <version>7.0.0-SNAPSHOT</version>
   </parent>
@@ -22,7 +22,7 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.github.nilcy</groupId>
+      <groupId>com.github.nilcy.yoyo</groupId>
       <artifactId>yoyo-framework-command</artifactId>
       <version>${yoyo-framework-command.version}</version>
       <scope>compile</scope>
