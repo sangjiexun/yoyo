@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.github.nilcy.yoyo</groupId>
+  <artifactId>yoyo</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>YOYO</name>
+  <description>UUO (you-you-oh) [short for "Un-Used Operation"]</description>
+  <url>https://github.com/nilcy/yoyo</url>
+  <inceptionYear>2013</inceptionYear>
+  <organization>
+    <name>nilcy</name>
+    <url>https://github.com/nilcy/</url>
+  </organization>
+  <licenses>
+    <license>
+      <name>GNU AFFERO GENERAL PUBLIC LICENSE</name>
+      <url>http://www.gnu.org/licenses/agpl-3.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>nilcy</id>
+      <name>Takehiro Shimokawa</name>
+      <email>nilcy@mac.com</email>
+      <url>https://github.com/nilcy</url>
+    </developer>
+  </developers>
+  <scm>
+    <url>https://github.com/nilcy/yoyo</url>
+    <connection>scm:git:git://github.com/nilcy/yoyo.git</connection>
+    <developerConnection>scm:git:git@github.com:nilcy/yoyo.git</developerConnection>
+  </scm>
+  <issueManagement>
+    <url>https://github.com/nilcy/yoyo/issues</url>
+    <system>GitHub Issues</system>
+  </issueManagement>
+  <properties>
+    <jdk.version>1.7</jdk.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <site.encoding>UTF-8</site.encoding>
+  </properties>
+</project>
