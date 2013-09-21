@@ -41,4 +41,5 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <site.encoding>UTF-8</site.encoding>
   </properties>
+  <packaging>pom</packaging>
 </project>
