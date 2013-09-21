@@ -1,9 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.nilcy.yoyo</groupId>
   <artifactId>yoyo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
   <name>YOYO</name>
   <description>UUO (you-you-oh) [short for "Un-Used Operation"]</description>
   <url>https://github.com/nilcy/yoyo</url>
@@ -17,6 +19,7 @@
       <name>GNU AFFERO GENERAL PUBLIC LICENSE</name>
       <url>http://www.gnu.org/licenses/agpl-3.0.txt</url>
       <distribution>repo</distribution>
+      <comments>The GNU Affero General Public License is a free, copyleft license for software and other kinds of works, specifically designed to ensure cooperation with the community in the case of network server software.</comments>
     </license>
   </licenses>
   <developers>
@@ -25,21 +28,46 @@
       <name>Takehiro Shimokawa</name>
       <email>nilcy@mac.com</email>
       <url>https://github.com/nilcy</url>
+      <roles>
+        <role>DIRECTOR</role>
+        <role>CREATOR</role>
+        <role>EDITOR</role>
+        <role>AUDITOR</role>
+      </roles>
+      <timezone>-9</timezone>
     </developer>
   </developers>
+  <modules>
+    <module>yoyo-framework</module>
+  </modules>
   <scm>
     <url>https://github.com/nilcy/yoyo</url>
     <connection>scm:git:git://github.com/nilcy/yoyo.git</connection>
     <developerConnection>scm:git:git@github.com:nilcy/yoyo.git</developerConnection>
   </scm>
   <issueManagement>
-    <url>https://github.com/nilcy/yoyo/issues</url>
     <system>GitHub Issues</system>
+    <url>https://github.com/nilcy/yoyo/issues</url>
   </issueManagement>
+  <ciManagement />
+  <distributionManagement>
+    <repository>
+      <id>release-repository</id>
+      <url>file:///home.nilcy/git/zeroth-pages/maven/release</url>
+    </repository>
+    <snapshotRepository>
+      <id>snapshot-repository</id>
+      <url>file:///home.nilcy/git/zeroth-pages/maven/snapshot/</url>
+    </snapshotRepository>
+    <site>
+      <id>site-repository</id>
+      <url>file:///home.nilcy/git/zeroth-pages/maven/site</url>
+    </site>
+  </distributionManagement>
   <properties>
-    <jdk.version>1.7</jdk.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <site.encoding>UTF-8</site.encoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
-  <packaging>pom</packaging>
 </project>
