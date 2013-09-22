@@ -85,7 +85,7 @@
     </server>
   </servers>
   <nodes>
-    <node name="localhost-zeroth" type="CONFIG" node-host="localhost" install-dir="${com.sun.aas.productRoot}"/>
+    <node name="localhost-yoyo" type="CONFIG" node-host="localhost" install-dir="${com.sun.aas.productRoot}"/>
   </nodes>
  <configs>
    <config name="server-config">
@@ -468,7 +468,7 @@
          <system-property name="JAVA_DEBUGGER_PORT" value="29009"/>
      </config>
   </configs>
-  <property name="administrative.domain.name" value="zeroth"/>
+  <property name="administrative.domain.name" value="yoyo"/>
   <secure-admin special-admin-indicator="8c9a1a0f-9c65-4e87-ad5a-5dad8b15fe94">
       <secure-admin-principal dn="CN=nilcy-MacBook-Air.local,OU=GlassFish,O=Oracle Corporation,L=Santa Clara,ST=California,C=US"></secure-admin-principal>
       <secure-admin-principal dn="CN=nilcy-MacBook-Air.local-instance,OU=GlassFish,O=Oracle Corporation,L=Santa Clara,ST=California,C=US"></secure-admin-principal>

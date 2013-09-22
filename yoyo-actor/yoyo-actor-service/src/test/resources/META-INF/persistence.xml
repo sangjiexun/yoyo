@@ -3,31 +3,31 @@
   xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
   <persistence-unit name="primary" transaction-type="JTA">
     <jta-data-source>jdbc/__default</jta-data-source>
-    <class>zeroth.framework.enterprise.domain.AbstractPersistable</class>
-    <class>zeroth.framework.enterprise.domain.AbstractAuditable</class>
-    <class>zeroth.actor.service.domain.Company</class>
-    <class>zeroth.actor.service.domain.Customer</class>
-    <class>zeroth.actor.service.domain.Level</class>
-    <class>zeroth.actor.service.domain.Member</class>
-    <class>zeroth.actor.service.domain.MemberAuth</class>
-    <class>zeroth.actor.service.domain.Organ</class>
-    <class>zeroth.actor.service.domain.Partner</class>
-    <class>zeroth.actor.service.domain.Staff</class>
-    <class>zeroth.actor.service.domain.Supplier</class>
-    <class>zeroth.actor.service.domain.Title</class>
-    <class>zeroth.actor.service.domain.misc.IndustryClass</class>
-    <class>zeroth.actor.service.domain.misc.ListedSection</class>
-    <class>zeroth.actor.service.domain.misc.News</class>
-    <class>zeroth.actor.service.domain.misc.Notice</class>
-    <class>zeroth.actor.service.domain.parts.Address</class>
-    <class>zeroth.actor.service.domain.parts.Contact</class>
-    <class>zeroth.actor.service.domain.parts.CustomerContact</class>
-    <class>zeroth.actor.service.domain.parts.HomeAddress</class>
-    <class>zeroth.actor.service.domain.parts.MemberContact</class>
-    <class>zeroth.actor.service.domain.parts.OfficeAddress</class>
-    <class>zeroth.actor.service.domain.parts.PartnerContact</class>
-    <class>zeroth.actor.service.domain.parts.SupplierContact</class>
-    <class>zeroth.actor.service.domain.parts.TitleAuth</class>
+    <class>yoyo.framework.enterprise.domain.AbstractPersistable</class>
+    <class>yoyo.framework.enterprise.domain.AbstractAuditable</class>
+    <class>yoyo.actor.service.domain.Company</class>
+    <class>yoyo.actor.service.domain.Customer</class>
+    <class>yoyo.actor.service.domain.Level</class>
+    <class>yoyo.actor.service.domain.Member</class>
+    <class>yoyo.actor.service.domain.MemberAuth</class>
+    <class>yoyo.actor.service.domain.Organ</class>
+    <class>yoyo.actor.service.domain.Partner</class>
+    <class>yoyo.actor.service.domain.Staff</class>
+    <class>yoyo.actor.service.domain.Supplier</class>
+    <class>yoyo.actor.service.domain.Title</class>
+    <class>yoyo.actor.service.domain.misc.IndustryClass</class>
+    <class>yoyo.actor.service.domain.misc.ListedSection</class>
+    <class>yoyo.actor.service.domain.misc.News</class>
+    <class>yoyo.actor.service.domain.misc.Notice</class>
+    <class>yoyo.actor.service.domain.parts.Address</class>
+    <class>yoyo.actor.service.domain.parts.Contact</class>
+    <class>yoyo.actor.service.domain.parts.CustomerContact</class>
+    <class>yoyo.actor.service.domain.parts.HomeAddress</class>
+    <class>yoyo.actor.service.domain.parts.MemberContact</class>
+    <class>yoyo.actor.service.domain.parts.OfficeAddress</class>
+    <class>yoyo.actor.service.domain.parts.PartnerContact</class>
+    <class>yoyo.actor.service.domain.parts.SupplierContact</class>
+    <class>yoyo.actor.service.domain.parts.TitleAuth</class>
     <exclude-unlisted-classes>true</exclude-unlisted-classes>
     <shared-cache-mode>ENABLE_SELECTIVE</shared-cache-mode>
     <validation-mode>AUTO</validation-mode>

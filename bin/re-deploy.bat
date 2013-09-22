@@ -1,2 +1,2 @@
-@call asadmin undeploy zeroth-application-allinone
-@call asadmin deploy zeroth-application/zeroth-application-allinone/target/zeroth-application-allinone.ear
+@call asadmin undeploy yoyo-application-allinone
+@call asadmin deploy yoyo-application/yoyo-application-allinone/target/yoyo-application-allinone.ear

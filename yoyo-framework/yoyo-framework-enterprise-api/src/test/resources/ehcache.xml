@@ -5,7 +5,7 @@
   <diskStore path="java.io.tmpdir" />
   <!-- Factory for creating CacheManagerEventListener setting. -->
   <cacheManagerEventListenerFactory
-    class="zeroth.framework.enterprise.shared.DefaultCacheManagerEventListenerFactory" properties="" />
+    class="yoyo.framework.enterprise.shared.DefaultCacheManagerEventListenerFactory" properties="" />
   <!-- Default cache setting. -->
   <defaultCache eternal="false" timeToIdleSeconds="120"
     timeToLiveSeconds="120" maxElementsOnDisk="10000000" diskExpiryThreadIntervalSeconds="120"

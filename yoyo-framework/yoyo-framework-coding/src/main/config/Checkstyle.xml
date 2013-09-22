@@ -5,7 +5,7 @@
     This configuration file was written by the eclipse-cs plugin configuration editor
 -->
 <!--
-    Checkstyle-Configuration: zeroth Checks
+    Checkstyle-Configuration: yoyo Checks
     Description: none
 -->
 <module name="Checker">
@@ -235,7 +235,7 @@
   </module>
   <module name="JavadocPackage"/>
   <module name="Header">
-    <property name="header" value="// ========================================================================\n// Copyright (C) zeroth Project Team. All rights reserved.\n// GNU AFFERO GENERAL PUBLIC LICENSE Version 3, 19 November 2007\n// http://www.gnu.org/licenses/agpl-3.0.txt\n// ========================================================================\n"/>
+    <property name="header" value="// ========================================================================\n// Copyright (C) YOYO Project Team. All rights reserved.\n// GNU AFFERO GENERAL PUBLIC LICENSE Version 3, 19 November 2007\n// http://www.gnu.org/licenses/agpl-3.0.txt\n// ========================================================================\n"/>
   </module>
   <module name="FileLength"/>
   <module name="FileTabCharacter">

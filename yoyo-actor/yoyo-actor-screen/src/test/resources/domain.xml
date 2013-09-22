@@ -25,13 +25,13 @@
       res-type="javax.sql.ConnectionPoolDataSource" name="primary_pool">
       <property name="serverName" value="localhost" />
       <property name="portNumber" value="5432" />
-      <property name="databaseName" value="zeroth" />
-      <property name="user" value="zeroth" />
+      <property name="databaseName" value="yoyo" />
+      <property name="user" value="yoyo" />
       <property name="password" value="happyhacking" />
     </jdbc-connection-pool>
     <jdbc-resource pool-name="primary_pool" jndi-name="jdbc/primary"></jdbc-resource>
     <mail-resource debug="true" host="smtp.gmail.com" transport-protocol-class="com.sun.mail.smtp.SMTPSSLTransport"
-      jndi-name="mail/primary" transport-protocol="smtps" from="zeroth.framework@gmail.com" user="zeroth.framework@gmail.com">
+      jndi-name="mail/primary" transport-protocol="smtps" from="yoyo.framework@gmail.com" user="yoyo.framework@gmail.com">
       <property name="mail-smtps-auth" value="true" />
       <property name="mail-smtps-password" value="happyhacking" />
     </mail-resource>
@@ -45,7 +45,7 @@
     </server>
   </servers>
   <nodes>
-    <node name="localhost-zeroth" type="CONFIG" node-host="localhost" install-dir="${com.sun.aas.productRoot}" />
+    <node name="localhost-yoyo" type="CONFIG" node-host="localhost" install-dir="${com.sun.aas.productRoot}" />
   </nodes>
   <configs>
     <config name="server-config">
@@ -502,7 +502,7 @@
       <system-property name="JAVA_DEBUGGER_PORT" value="29009" />
     </config>
   </configs>
-  <property name="administrative.domain.name" value="zeroth" />
+  <property name="administrative.domain.name" value="yoyo" />
   <secure-admin special-admin-indicator="e71d3115-7d22-4cc8-8e2c-30d060563a67">
     <secure-admin-principal
       dn="CN=nilcy-MacBook-Air.local,OU=GlassFish,O=Oracle Corporation,L=Santa Clara,ST=California,C=US"></secure-admin-principal>

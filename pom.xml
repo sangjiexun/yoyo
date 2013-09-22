@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
   xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
@@ -16,7 +16,7 @@
   </organization>
   <licenses>
     <license>
-      <name>Affero GPL3</name>
+      <name>GNU AFFERO GENERAL PUBLIC LICENSE Version 3</name>
       <url>http://www.gnu.org/licenses/agpl.html</url>
       <distribution>repo</distribution>
       <comments>The GNU Affero General Public License is a free, copyleft license for software and other kinds of works, specifically designed to ensure cooperation with the community in the case of network server software.</comments>

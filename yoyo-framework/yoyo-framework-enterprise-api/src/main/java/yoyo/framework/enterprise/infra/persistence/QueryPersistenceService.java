@@ -1,0 +1,61 @@
+// ========================================================================
+// Copyright (C) YOYO Project Team. All rights reserved.
+// GNU AFFERO GENERAL PUBLIC LICENSE Version 3, 19 November 2007
+// http://www.gnu.org/licenses/agpl-3.0.txt
+// ========================================================================
+package yoyo.framework.enterprise.infra.persistence;
+import java.io.Serializable;
+import javax.persistence.TypedQuery;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.Root;
+import yoyo.framework.enterprise.shared.Persistable;
+import yoyo.framework.standard.shared.Pageable;
+/**
+ * 先進データ永続化サービスI/F(JPA2/CriteriaQuery)
+ * <p>
+ * クエリオブジェクト@PofEAA
+ * </p>
+ * @param <E> エンティティ型
+ * @param <ID> 識別子オブジェクト型
+ * @author nilcy
+ */
+public interface QueryPersistenceService<E extends Persistable<ID>, ID extends Serializable>
+    extends SimplePersistenceService<E, ID> {
+    /**
+     * 標準ビルダーの取得
+     * @return 標準ビルダー
+     */
+    CriteriaBuilder builder();
+    /**
+     * 標準クエリの取得
+     * <p>
+     * まずCriteria-APIを使用して標準クエリを設定する。これがクエリの作成で使用される。
+     * </p>
+     * @return 標準クエリ
+     */
+    CriteriaQuery<E> query();
+    /**
+     * 標準ルートの取得
+     * @return 標準ルート
+     */
+    Root<E> root();
+    /**
+     * クエリの作成
+     * @return クエリ
+     */
+    TypedQuery<E> createQuery();
+    /**
+     * クエリの作成
+     * @param pageable ページ条件I/F
+     * @return クエリ
+     */
+    TypedQuery<E> createQuery(Pageable pageable);
+    /**
+     * 件数クエリの作成
+     * @param expression WHERE句
+     * @return 件数クエリ
+     */
+    TypedQuery<Long> createCountQuery(Predicate expression);
+}

@@ -2,7 +2,7 @@
 <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
   version="3.1">
-  <display-name>zeroth-actor</display-name>
+  <display-name>yoyo-actor</display-name>
   <context-param>
     <param-name>javax.faces.DEFAULT_SUFFIX</param-name>
     <param-value>.xhtml</param-value>
@@ -25,7 +25,7 @@
   </context-param>
   <context-param>
     <param-name>javax.faces.FACELETS_LIBRARIES</param-name>
-    <param-value>/WEB-INF/zeroth.taglib.xml</param-value>
+    <param-value>/WEB-INF/yoyo.taglib.xml</param-value>
   </context-param>
   <servlet>
     <servlet-name>Faces Servlet</servlet-name>
@@ -72,7 +72,7 @@
   </error-page>
   <login-config>
     <auth-method>FORM</auth-method>
-    <realm-name>zeroth_primary_auth</realm-name>
+    <realm-name>yoyo_primary_auth</realm-name>
     <form-login-config>
       <form-login-page>/login.xhtml</form-login-page>
       <form-error-page>/login-error.xhtml</form-error-page>
