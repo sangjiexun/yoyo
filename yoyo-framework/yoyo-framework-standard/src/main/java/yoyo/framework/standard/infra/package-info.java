@@ -4,7 +4,7 @@
 // http://www.gnu.org/licenses/agpl-3.0.txt
 // ========================================================================
 /**
- * スタンダードフレームワーク(JavaSE) | シェアード
+ * スタンダードフレームワーク(JavaSE) | インフラストラクチャ
  * @author nilcy
  */
-package yoyo.framework.standard.shared;
+package yoyo.framework.standard.infra;

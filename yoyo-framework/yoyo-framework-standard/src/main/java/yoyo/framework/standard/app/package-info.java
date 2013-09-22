@@ -4,7 +4,7 @@
 // http://www.gnu.org/licenses/agpl-3.0.txt
 // ========================================================================
 /**
- * スタンダードフレームワーク(JavaSE) | アプリケーションレイヤ
+ * スタンダードフレームワーク(JavaSE) | アプリケーション
  * @author nilcy
  */
 package yoyo.framework.standard.app;
