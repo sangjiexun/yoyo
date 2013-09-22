@@ -42,6 +42,17 @@ public class SimplePersistence<T extends Serializable> implements Service {
         manager.persist(entity);
     }
     /**
+     * 同期
+     * <dl>
+     * <dt>事後条件</dt>
+     * <dd>管理エンティティをデータベースと同期する。</dd>
+     * </dl>
+     * @see EntityManager#flush()
+     */
+    public void flush() {
+        manager.flush();
+    }
+    /**
      * 分離
      * <dl>
      * <dt>事後条件</dt>
@@ -102,5 +113,15 @@ public class SimplePersistence<T extends Serializable> implements Service {
      */
     public T find(final Object primaryKey, final LockModeType lockMode) {
         return manager.find(clazz, primaryKey, lockMode);
+    }
+    /**
+     * {@link #manager} の取得
+     * <ul>
+     * <li>ユニットテストのコンビニ関数。</li>
+     * </ul>
+     * @return {@link #manager}
+     */
+    EntityManager getManager() {
+        return manager;
     }
 }
