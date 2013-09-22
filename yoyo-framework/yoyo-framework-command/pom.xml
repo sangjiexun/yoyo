@@ -5,14 +5,14 @@
   <parent>
     <groupId>com.github.nilcy.yoyo</groupId>
     <artifactId>yoyo-framework</artifactId>
-    <version>7.0.0-SNAPSHOT</version>
+    <version>0.1.0-SNAPSHOT</version>
   </parent>
   <artifactId>yoyo-framework-command</artifactId>
   <name>yoyo-framework-command</name>
   <description>yoyo Framework Domain. Command Line Interface Module.</description>
   <properties>
     <commons-cli.version>1.2</commons-cli.version>
-    <yoyo-framework-standard.version>7.0.0-SNAPSHOT</yoyo-framework-standard.version>
+    <yoyo-framework-standard.version>0.1.0-SNAPSHOT</yoyo-framework-standard.version>
   </properties>
   <dependencies>
     <dependency>

@@ -5,14 +5,14 @@
   <parent>
     <groupId>com.github.nilcy.yoyo</groupId>
     <artifactId>yoyo-framework</artifactId>
-    <version>7.0.0-SNAPSHOT</version>
+    <version>0.1.0-SNAPSHOT</version>
   </parent>
   <artifactId>yoyo-framework-service</artifactId>
   <name>yoyo-framework-service</name>
   <description>yoyo Framework Domain. Service Module.</description>
   <properties>
-    <yoyo-framework-enterprise.version>7.0.0-SNAPSHOT</yoyo-framework-enterprise.version>
-    <yoyo-framework-service-api.version>7.0.0-SNAPSHOT</yoyo-framework-service-api.version>
+    <yoyo-framework-enterprise.version>0.1.0-SNAPSHOT</yoyo-framework-enterprise.version>
+    <yoyo-framework-service-api.version>0.1.0-SNAPSHOT</yoyo-framework-service-api.version>
   </properties>
   <dependencies>
     <dependency>

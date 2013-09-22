@@ -6,13 +6,13 @@
   <parent>
     <groupId>com.github.nilcy.yoyo</groupId>
     <artifactId>yoyo-actor</artifactId>
-    <version>7.0.0-SNAPSHOT</version>
+    <version>0.1.0-SNAPSHOT</version>
   </parent>
   <artifactId>yoyo-actor-command</artifactId>
   <name>yoyo-actor-command</name>
   <description>yoyo Actor Domain. Command Line Interface Module.</description>
   <properties>
-    <yoyo-framework-command.version>7.0.0-SNAPSHOT</yoyo-framework-command.version>
+    <yoyo-framework-command.version>0.1.0-SNAPSHOT</yoyo-framework-command.version>
   </properties>
   <dependencies>
     <dependency>

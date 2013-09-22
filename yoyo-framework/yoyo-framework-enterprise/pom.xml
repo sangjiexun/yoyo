@@ -6,14 +6,14 @@
   <parent>
     <groupId>com.github.nilcy.yoyo</groupId>
     <artifactId>yoyo-framework</artifactId>
-    <version>7.0.0-SNAPSHOT</version>
+    <version>0.1.0-SNAPSHOT</version>
   </parent>
   <artifactId>yoyo-framework-enterprise</artifactId>
   <name>yoyo-framework-enterprise</name>
   <description>yoyo Framework Domain. Enterprise Module.</description>
   <properties>
-    <yoyo-framework-standard.version>7.0.0-SNAPSHOT</yoyo-framework-standard.version>
-    <yoyo-framework-enterprise-api.version>7.0.0-SNAPSHOT</yoyo-framework-enterprise-api.version>
+    <yoyo-framework-standard.version>0.1.0-SNAPSHOT</yoyo-framework-standard.version>
+    <yoyo-framework-enterprise-api.version>0.1.0-SNAPSHOT</yoyo-framework-enterprise-api.version>
   </properties>
   <dependencies>
     <dependency>

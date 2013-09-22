@@ -3,8 +3,20 @@
 // GNU AFFERO GENERAL PUBLIC LICENSE Version 3, 19 November 2007
 // http://www.gnu.org/licenses/agpl-3.0.txt
 // ========================================================================
+package yoyo.framework.service;
 /**
- * WS module.
+ * サンプルコード
  * @author nilcy
  */
-package yoyo.actor.service.app.ws;
+public final class Hello {
+    /** 非公開コンストラクタ */
+    private Hello() {
+    }
+    /**
+     * サンプルメソッド
+     * @return "Hello"
+     */
+    public static String sayHello() {
+        return "Hello";
+    }
+}

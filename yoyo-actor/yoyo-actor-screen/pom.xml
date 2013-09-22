@@ -5,16 +5,16 @@
   <parent>
     <groupId>com.github.nilcy.yoyo</groupId>
     <artifactId>yoyo-actor</artifactId>
-    <version>7.0.0-SNAPSHOT</version>
+    <version>0.1.0-SNAPSHOT</version>
   </parent>
   <artifactId>yoyo-actor-screen</artifactId>
   <packaging>war</packaging>
   <name>yoyo-actor-screen</name>
   <description>yoyo Actor Domain. Screen Module.</description>
   <properties>
-    <yoyo-framework-screen.version>7.0.0-SNAPSHOT</yoyo-framework-screen.version>
-    <yoyo-actor-service-api.version>7.0.0-SNAPSHOT</yoyo-actor-service-api.version>
-    <yoyo-actor-service.version>7.0.0-SNAPSHOT</yoyo-actor-service.version>
+    <yoyo-framework-screen.version>0.1.0-SNAPSHOT</yoyo-framework-screen.version>
+    <yoyo-actor-service-api.version>0.1.0-SNAPSHOT</yoyo-actor-service-api.version>
+    <yoyo-actor-service.version>0.1.0-SNAPSHOT</yoyo-actor-service.version>
   </properties>
   <dependencies>
     <dependency>

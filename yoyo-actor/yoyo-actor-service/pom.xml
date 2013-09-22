@@ -6,14 +6,14 @@
   <parent>
     <groupId>com.github.nilcy.yoyo</groupId>
     <artifactId>yoyo-actor</artifactId>
-    <version>7.0.0-SNAPSHOT</version>
+    <version>0.1.0-SNAPSHOT</version>
   </parent>
   <artifactId>yoyo-actor-service</artifactId>
   <name>yoyo-actor-service</name>
   <description>yoyo Actor Domain. Service Module.</description>
   <properties>
-    <yoyo-framework-service.version>7.0.0-SNAPSHOT</yoyo-framework-service.version>
-    <yoyo-actor-service-api.version>7.0.0-SNAPSHOT</yoyo-actor-service-api.version>
+    <yoyo-framework-service.version>0.1.0-SNAPSHOT</yoyo-framework-service.version>
+    <yoyo-actor-service-api.version>0.1.0-SNAPSHOT</yoyo-actor-service-api.version>
   </properties>
   <dependencies>
     <dependency>
