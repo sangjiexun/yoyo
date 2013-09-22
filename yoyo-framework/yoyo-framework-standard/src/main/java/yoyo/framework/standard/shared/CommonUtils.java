@@ -5,8 +5,6 @@
 // ========================================================================
 package yoyo.framework.standard.shared;
 import java.io.Serializable;
-import java.lang.reflect.InvocationTargetException;
-import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.SerializationUtils;
 import org.apache.commons.lang3.Validate;
@@ -37,40 +35,6 @@ public class CommonUtils {
      */
     public static <T> T nullSafe(final T object, final T defaultValue) {
         return ObjectUtils.defaultIfNull(object, defaultValue);
-    }
-    /**
-     * プロパティ一括コピー
-     * <p>
-     * オブジェクトの可視性は public でないとコピーできないことに注意すること。
-     * </p>
-     * @param origin コピー元オブジェクト
-     * @param destination コピー先オブジェクト
-     * @throws StandardRuntimeException コピーできないとき
-     */
-    public static void copyProperties(final Object origin, final Object destination) {
-        try {
-            BeanUtils.copyProperties(destination, origin);
-        } catch (final IllegalAccessException e) {
-            throw new StandardRuntimeException(e);
-        } catch (final InvocationTargetException e) {
-            throw new StandardRuntimeException(e);
-        }
-    }
-    /**
-     * プロパティ個別コピー
-     * @param object コピー対象オブジェクト
-     * @param name プロパティ名
-     * @param value プロパティ値
-     * @throws StandardRuntimeException コピーできないとき
-     */
-    public static void copyProperty(final Object object, final String name, final Object value) {
-        try {
-            BeanUtils.copyProperty(object, name, value);
-        } catch (final IllegalAccessException e) {
-            throw new StandardRuntimeException(e);
-        } catch (final InvocationTargetException e) {
-            throw new StandardRuntimeException(e);
-        }
     }
     /**
      * シャローコピー

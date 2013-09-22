@@ -7,11 +7,8 @@ package yoyo.framework.standard.shared;
 import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
 import static yoyo.framework.standard.shared.CommonUtils.*;
-import java.lang.reflect.InvocationTargetException;
 import org.junit.Ignore;
 import org.junit.Test;
-import yoyo.framework.standard.shared.AbstractDataObject;
-import yoyo.framework.standard.shared.CommonUtils;
 /**
  * {@link CommonUtils} のユニットテスト
  * @author nilcy
@@ -32,21 +29,6 @@ public final class CommonUtilsTest {
         assertThat(nullSafe("check", "safe"), is("check"));
         assertThat(nullSafe(null, "safe"), is("safe"));
         assertThat(nullSafe(null, null), is(nullValue()));
-    }
-    @Test
-    public void testCopyProperties() throws IllegalAccessException, InvocationTargetException {
-        final Fuga fuga = new Fuga("foo#1", "bar#1");
-        final Hoge hoge = new Hoge();
-        copyProperties(fuga, hoge);
-        assertThat(hoge.getFoo(), is("foo#1"));
-        assertThat(hoge.getBar(), is("bar#1"));
-        assertThat(hoge.getBaz(), is(nullValue()));
-    }
-    @Test
-    public void testCopyProperty() {
-        final Fuga fuga = new Fuga();
-        copyProperty(fuga, "foo", "foo#1");
-        assertThat(fuga.getFoo(), is("foo#1"));
     }
     @Test
     public void testShallowCopy() {
