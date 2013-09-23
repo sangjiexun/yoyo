@@ -9,7 +9,7 @@
   </parent>
   <artifactId>yoyo-framework-coding</artifactId>
   <name>yoyo-framework-coding</name>
-  <description>yoyo Framework Domain. Coding Module.</description>
+  <description>YOYO Framework Domain. Coding Module.</description>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>

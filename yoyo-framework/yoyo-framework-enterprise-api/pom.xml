@@ -9,7 +9,7 @@
   </parent>
   <artifactId>yoyo-framework-enterprise-api</artifactId>
   <name>yoyo-framework-enterprise-api</name>
-  <description>yoyo Framework Domain. Enterprise-API Module.</description>
+  <description>YOYO Framework Domain. Enterprise-API Module.</description>
   <properties>
     <yoyo-framework-standard.version>0.1.0-SNAPSHOT</yoyo-framework-standard.version>
   </properties>

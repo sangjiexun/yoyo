@@ -10,7 +10,7 @@
   </parent>
   <artifactId>yoyo-framework-screen</artifactId>
   <name>yoyo-framework-screen</name>
-  <description>yoyo Framework Domain. Screen Module.</description>
+  <description>YOYO Framework Domain. Screen Module.</description>
   <properties>
     <yoyo-framework-service-api.version>0.1.0-SNAPSHOT</yoyo-framework-service-api.version>
   </properties>

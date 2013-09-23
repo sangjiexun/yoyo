@@ -10,7 +10,7 @@
   <artifactId>yoyo-framework-standard</artifactId>
   <packaging>jar</packaging>
   <name>yoyo-framework-standard</name>
-  <description>yoyo Framework Domain. Standard Module.</description>
+  <description>YOYO Framework Domain. Standard Module.</description>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>

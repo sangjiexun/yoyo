@@ -9,7 +9,7 @@
   </parent>
   <artifactId>yoyo-framework-service-api</artifactId>
   <name>yoyo-framework-service-api</name>
-  <description>yoyo Framework Domain. Service-API Module.</description>
+  <description>YOYO Framework Domain. Service-API Module.</description>
   <properties>
     <yoyo-framework-enterprise-api.version>0.1.0-SNAPSHOT</yoyo-framework-enterprise-api.version>
   </properties>

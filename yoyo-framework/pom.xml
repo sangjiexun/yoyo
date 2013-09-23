@@ -10,7 +10,7 @@
   <artifactId>yoyo-framework</artifactId>
   <packaging>pom</packaging>
   <name>yoyo-framework</name>
-  <description>yoyo Framework Domain.</description>
+  <description>YOYO Framework Domain.</description>
   <modules>
     <module>yoyo-framework-coding</module>
     <module>yoyo-framework-testing</module>

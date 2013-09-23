@@ -9,7 +9,7 @@
   </parent>
   <artifactId>yoyo-framework-command</artifactId>
   <name>yoyo-framework-command</name>
-  <description>yoyo Framework Domain. Command Line Interface Module.</description>
+  <description>YOYO Framework Domain. Command Line Interface Module.</description>
   <properties>
     <commons-cli.version>1.2</commons-cli.version>
     <yoyo-framework-standard.version>0.1.0-SNAPSHOT</yoyo-framework-standard.version>

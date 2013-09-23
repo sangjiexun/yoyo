@@ -9,7 +9,7 @@
   </parent>
   <artifactId>yoyo-framework-testing</artifactId>
   <name>yoyo-framework-testing</name>
-  <description>yoyo Framework Domain. Testing Module.</description>
+  <description>YOYO Framework Domain. Testing Module.</description>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
