@@ -11,7 +11,9 @@ import javax.persistence.Persistence;
 import javax.persistence.TransactionRequiredException;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 /**
  * {@link SimplePersistence}
  * @author nilcy
@@ -20,6 +22,8 @@ import org.junit.Test;
 public class SimplePersistenceTest {
     private EntityManager manager;
     private SimplePersistence<TestEntity> testee;
+    @Rule
+    public ExpectedException thrown = ExpectedException.none();
     @Before
     public void setUp() throws Exception {
         manager = Persistence.createEntityManagerFactory("primary").createEntityManager();
@@ -33,6 +37,11 @@ public class SimplePersistenceTest {
     @Test
     public final void testSimplePersistence() {
         assertThat(new SimplePersistence(manager, TestEntity.class), is(not(nullValue())));
+        thrown.handleAssertionErrors();
+        thrown.expect(AssertionError.class);
+        new SimplePersistence(null, null);
+        new SimplePersistence(null, TestEntity.class);
+        new SimplePersistence(manager, null);
     }
     @Test
     public final void testPersist() {

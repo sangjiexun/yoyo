@@ -21,6 +21,16 @@ public class LoggingService implements Service {
     public LoggingService() {
     }
     /**
+     * 無名ロガーの取得
+     * <p>
+     * {@link LoggingService}のロガーを返却する。
+     * </p>
+     * @return 無名ロガー
+     */
+    public static Logger getLogger() {
+        return LoggerFactory.getLogger(LoggingService.class);
+    }
+    /**
      * ロガーの取得
      * @param clazz ロギングするクラス
      * @return ロガー
