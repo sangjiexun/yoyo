@@ -4,7 +4,7 @@
   <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
     <Target>System.out</Target>
     <layout class="ch.qos.logback.classic.PatternLayout">
-      <Pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level %logger - %message%n</Pattern>
+      <Pattern>%d{yyyy-MM-dd HH:mm:ss} %X{account} %-5level %logger - %message%n</Pattern>
     </layout>
   </appender>
   <logger name="yoyo">

@@ -33,8 +33,10 @@ public class LoggingService implements Service {
      * @param map 設定値マップ
      */
     public static void putMDC(final Map<String, String> map) {
-        for (final Entry<String, String> entry : map.entrySet()) {
-            MDC.put(entry.getKey(), entry.getValue());
+        if (map != null) {
+            for (final Entry<String, String> entry : map.entrySet()) {
+                MDC.put(entry.getKey(), entry.getValue());
+            }
         }
     }
     /** MDCの削除 */
