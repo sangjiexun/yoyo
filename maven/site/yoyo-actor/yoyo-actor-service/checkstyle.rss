@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rss version="0.91">
+  <channel>
+    <title>yoyo-actor-service - Checkstyle report</title>
+    <link>http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service/</link>
+    <description>yoyo-actor-service - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2013 nilcy</copyright>
+    <item>
+      <title>File: 38,
+             Errors: 0,
+             Warnings: 110,
+             Infos: 0
+      </title>
+            <link>http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html</link>
+      <description>
+        <p>Click <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.app.misc.ListedSectionApplicationImpl.java">yoyo/actor/service/app/misc/ListedSectionApplicationImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.app.actor.package-info.java">yoyo/actor/service/app/actor/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.app.misc.IndustryClassApplicationImpl.java">yoyo/actor/service/app/misc/IndustryClassApplicationImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.domain.package-info.java">yoyo/actor/service/domain/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.domain.misc.NewsRepository.java">yoyo/actor/service/domain/misc/NewsRepository.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.domain.misc.ListedSectionRepository.java">yoyo/actor/service/domain/misc/ListedSectionRepository.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.app.actor.TitleApplicationImpl.java">yoyo/actor/service/app/actor/TitleApplicationImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.domain.MemberRepositoryImpl.java">yoyo/actor/service/domain/MemberRepositoryImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.domain.misc.PersistenceServiceAnnotation.java">yoyo/actor/service/domain/misc/PersistenceServiceAnnotation.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.domain.misc.IndustryClassRepository.java">yoyo/actor/service/domain/misc/IndustryClassRepository.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.domain.PersistenceServiceAnnotation.java">yoyo/actor/service/domain/PersistenceServiceAnnotation.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.app.actor.CustomerApplicationImpl.java">yoyo/actor/service/app/actor/CustomerApplicationImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.domain.LevelRepositoryImpl.java">yoyo/actor/service/domain/LevelRepositoryImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.domain.misc.IndustryClassRepositoryImpl.java">yoyo/actor/service/domain/misc/IndustryClassRepositoryImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.domain.MemberRepository.java">yoyo/actor/service/domain/MemberRepository.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.domain.misc.ListedSectionRepositoryImpl.java">yoyo/actor/service/domain/misc/ListedSectionRepositoryImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.app.actor.OrganApplicationImpl.java">yoyo/actor/service/app/actor/OrganApplicationImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.domain.SupplierRepository.java">yoyo/actor/service/domain/SupplierRepository.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.app.actor.LevelApplicationImpl.java">yoyo/actor/service/app/actor/LevelApplicationImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.domain.CustomerRepository.java">yoyo/actor/service/domain/CustomerRepository.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.app.misc.NewsApplicationImpl.java">yoyo/actor/service/app/misc/NewsApplicationImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.domain.TitleRepositoryImpl.java">yoyo/actor/service/domain/TitleRepositoryImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  4
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.app.actor.PartnerApplicationImpl.java">yoyo/actor/service/app/actor/PartnerApplicationImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.domain.OrganRepository.java">yoyo/actor/service/domain/OrganRepository.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.domain.PersistenceServiceProducer.java">yoyo/actor/service/domain/PersistenceServiceProducer.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  22
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.domain.misc.NewsRepositoryImpl.java">yoyo/actor/service/domain/misc/NewsRepositoryImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.app.misc.package-info.java">yoyo/actor/service/app/misc/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.domain.OrganRepositoryImpl.java">yoyo/actor/service/domain/OrganRepositoryImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.domain.EntityManagerProducer.java">yoyo/actor/service/domain/EntityManagerProducer.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.app.actor.SupplierApplicationImpl.java">yoyo/actor/service/app/actor/SupplierApplicationImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.domain.CustomerRepositoryImpl.java">yoyo/actor/service/domain/CustomerRepositoryImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.domain.misc.PersistenceServiceProducer.java">yoyo/actor/service/domain/misc/PersistenceServiceProducer.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.domain.TitleRepository.java">yoyo/actor/service/domain/TitleRepository.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.domain.SupplierRepositoryImpl.java">yoyo/actor/service/domain/SupplierRepositoryImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  4
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.domain.PartnerRepository.java">yoyo/actor/service/domain/PartnerRepository.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.app.actor.MemberApplicationImpl.java">yoyo/actor/service/app/actor/MemberApplicationImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.domain.LevelRepository.java">yoyo/actor/service/domain/LevelRepository.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-actor/yoyo-actor-service//checkstyle.html#yoyo.actor.service.domain.PartnerRepositoryImpl.java">yoyo/actor/service/domain/PartnerRepositoryImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

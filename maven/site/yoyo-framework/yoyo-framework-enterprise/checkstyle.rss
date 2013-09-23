@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rss version="0.91">
+  <channel>
+    <title>yoyo-framework-enterprise - Checkstyle report</title>
+    <link>http://nilcy.github.io/yoyo/maven/site/yoyo-framework/yoyo-framework-enterprise/</link>
+    <description>yoyo-framework-enterprise - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2013 nilcy</copyright>
+    <item>
+      <title>File: 11,
+             Errors: 0,
+             Warnings: 99,
+             Infos: 0
+      </title>
+            <link>http://nilcy.github.io/yoyo/maven/site/yoyo-framework/yoyo-framework-enterprise//checkstyle.html</link>
+      <description>
+        <p>Click <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-framework/yoyo-framework-enterprise//checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-framework/yoyo-framework-enterprise//checkstyle.html#yoyo.framework.enterprise.infra.persistence.PersistenceServiceFactoryImpl.java">yoyo/framework/enterprise/infra/persistence/PersistenceServiceFactoryImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-framework/yoyo-framework-enterprise//checkstyle.html#yoyo.framework.enterprise.infra.persistence.SimplePersistenceServiceImpl.java">yoyo/framework/enterprise/infra/persistence/SimplePersistenceServiceImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  31
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-framework/yoyo-framework-enterprise//checkstyle.html#yoyo.framework.enterprise.infra.messaging.MessageTopicService.java">yoyo/framework/enterprise/infra/messaging/MessageTopicService.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-framework/yoyo-framework-enterprise//checkstyle.html#yoyo.framework.enterprise.infra.messaging.MailServiceImpl.java">yoyo/framework/enterprise/infra/messaging/MailServiceImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  8
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-framework/yoyo-framework-enterprise//checkstyle.html#yoyo.framework.enterprise.domain.AbstractSimpleRepositoryImpl.java">yoyo/framework/enterprise/domain/AbstractSimpleRepositoryImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-framework/yoyo-framework-enterprise//checkstyle.html#yoyo.framework.enterprise.app.AbstractSimpleRepositoryApplication.java">yoyo/framework/enterprise/app/AbstractSimpleRepositoryApplication.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  11
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-framework/yoyo-framework-enterprise//checkstyle.html#yoyo.framework.enterprise.infra.persistence.NativePersistenceServiceImpl.java">yoyo/framework/enterprise/infra/persistence/NativePersistenceServiceImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  4
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-framework/yoyo-framework-enterprise//checkstyle.html#yoyo.framework.enterprise.infra.messaging.MessageQueueService.java">yoyo/framework/enterprise/infra/messaging/MessageQueueService.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-framework/yoyo-framework-enterprise//checkstyle.html#yoyo.framework.enterprise.infra.persistence.QueryPersistenceServiceImpl.java">yoyo/framework/enterprise/infra/persistence/QueryPersistenceServiceImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  20
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-framework/yoyo-framework-enterprise//checkstyle.html#yoyo.framework.enterprise.infra.persistence.StandardPersistenceServiceImpl.java">yoyo/framework/enterprise/infra/persistence/StandardPersistenceServiceImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-framework/yoyo-framework-enterprise//checkstyle.html#yoyo.framework.enterprise.domain.AbstractQueryRepositoryImpl.java">yoyo/framework/enterprise/domain/AbstractQueryRepositoryImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

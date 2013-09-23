@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rss version="0.91">
+  <channel>
+    <title>yoyo-framework-screen - Checkstyle report</title>
+    <link>http://nilcy.github.io/yoyo/maven/site/yoyo-framework/yoyo-framework-screen/</link>
+    <description>yoyo-framework-screen - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2013 nilcy</copyright>
+    <item>
+      <title>File: 14,
+             Errors: 0,
+             Warnings: 23,
+             Infos: 0
+      </title>
+            <link>http://nilcy.github.io/yoyo/maven/site/yoyo-framework/yoyo-framework-screen//checkstyle.html</link>
+      <description>
+        <p>Click <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-framework/yoyo-framework-screen//checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-framework/yoyo-framework-screen//checkstyle.html#yoyo.framework.screen.iface.jsf.UploadRenderer.java">yoyo/framework/screen/iface/jsf/UploadRenderer.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-framework/yoyo-framework-screen//checkstyle.html#yoyo.framework.screen.iface.jsf.FacesProfile.java">yoyo/framework/screen/iface/jsf/FacesProfile.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-framework/yoyo-framework-screen//checkstyle.html#yoyo.framework.screen.infra.package-info.java">yoyo/framework/screen/infra/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-framework/yoyo-framework-screen//checkstyle.html#yoyo.framework.screen.iface.jsf.AbstractPagination.java">yoyo/framework/screen/iface/jsf/AbstractPagination.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-framework/yoyo-framework-screen//checkstyle.html#yoyo.framework.screen.iface.jsf.Action.java">yoyo/framework/screen/iface/jsf/Action.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-framework/yoyo-framework-screen//checkstyle.html#yoyo.framework.screen.iface.jsf.Pagination.java">yoyo/framework/screen/iface/jsf/Pagination.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-framework/yoyo-framework-screen//checkstyle.html#yoyo.framework.screen.iface.jsf.StandardValidator.java">yoyo/framework/screen/iface/jsf/StandardValidator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  4
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-framework/yoyo-framework-screen//checkstyle.html#yoyo.framework.screen.iface.jsf.UploadAction.java">yoyo/framework/screen/iface/jsf/UploadAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-framework/yoyo-framework-screen//checkstyle.html#yoyo.framework.screen.iface.jsf.package-info.java">yoyo/framework/screen/iface/jsf/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-framework/yoyo-framework-screen//checkstyle.html#yoyo.framework.screen.iface.jsf.SimpleAction.java">yoyo/framework/screen/iface/jsf/SimpleAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-framework/yoyo-framework-screen//checkstyle.html#yoyo.framework.screen.iface.package-info.java">yoyo/framework/screen/iface/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-framework/yoyo-framework-screen//checkstyle.html#yoyo.framework.screen.package-info.java">yoyo/framework/screen/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-framework/yoyo-framework-screen//checkstyle.html#yoyo.framework.screen.iface.jsf.AbstractActionImpl.java">yoyo/framework/screen/iface/jsf/AbstractActionImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://nilcy.github.io/yoyo/maven/site/yoyo-framework/yoyo-framework-screen//checkstyle.html#yoyo.framework.screen.iface.jsf.FacesHelper.java">yoyo/framework/screen/iface/jsf/FacesHelper.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

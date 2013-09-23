@@ -1,0 +1,11 @@
+yoyo.actor.screen
+yoyo.actor.screen.app
+yoyo.actor.screen.iface.jsf.application
+yoyo.actor.screen.iface.jsf.conversation
+yoyo.actor.screen.iface.jsf.conversation.home
+yoyo.actor.screen.iface.jsf.conversation.master
+yoyo.actor.screen.iface.jsf.converter
+yoyo.actor.screen.iface.jsf.session
+yoyo.actor.screen.iface.web.rest
+yoyo.actor.screen.iface.web.rest.home
+yoyo.actor.screen.iface.web.servlet
