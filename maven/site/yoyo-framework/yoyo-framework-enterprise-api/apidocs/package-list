@@ -1,0 +1,8 @@
+yoyo.framework.enterprise
+yoyo.framework.enterprise.app
+yoyo.framework.enterprise.domain
+yoyo.framework.enterprise.infra
+yoyo.framework.enterprise.infra.messaging
+yoyo.framework.enterprise.infra.persistence
+yoyo.framework.enterprise.infra.routing
+yoyo.framework.enterprise.shared

@@ -1,0 +1,7 @@
+yoyo.framework.standard
+yoyo.framework.standard.app
+yoyo.framework.standard.domain
+yoyo.framework.standard.infra
+yoyo.framework.standard.infra.logging
+yoyo.framework.standard.infra.persistence
+yoyo.framework.standard.shared
