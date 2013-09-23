@@ -18,7 +18,7 @@ public class PersistenceService<T extends Serializable> implements Service {
     /** エンティティマネージャ */
     private EntityManager manager;
     /** 基本データ永続化 */
-    private SimplePersistence<T> simplePersistence;
+    private SimplePersistence<T> simplePersistenceImpl;
     /** コンストラクタ */
     public PersistenceService() {
     }
@@ -29,7 +29,7 @@ public class PersistenceService<T extends Serializable> implements Service {
      */
     public PersistenceService(final EntityManager manager, final Class<T> clazz) {
         this.manager = manager;
-        simplePersistence = new SimplePersistence<>(manager, clazz);
+        simplePersistenceImpl = new SimplePersistenceImpl<>(manager, clazz);
     }
     /**
      * {@link #manager} の取得
@@ -39,10 +39,10 @@ public class PersistenceService<T extends Serializable> implements Service {
         return manager;
     }
     /**
-     * {@link #simplePersistence} の取得
-     * @return {@link #simplePersistence}
+     * {@link #simplePersistenceImpl} の取得
+     * @return {@link #simplePersistenceImpl}
      */
     public SimplePersistence<T> getBasicPersistence() {
-        return simplePersistence;
+        return simplePersistenceImpl;
     }
 }

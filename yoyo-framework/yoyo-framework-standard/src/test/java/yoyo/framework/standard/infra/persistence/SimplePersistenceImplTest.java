@@ -14,20 +14,23 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
+import org.slf4j.Logger;
+import yoyo.framework.standard.infra.logging.LoggingService;
 /**
- * {@link SimplePersistence}
+ * {@link SimplePersistenceImpl}
  * @author nilcy
  */
 @SuppressWarnings("all")
-public class SimplePersistenceTest {
+public class SimplePersistenceImplTest {
     private EntityManager manager;
     private SimplePersistence<TestEntity> testee;
+    private static final Logger LOG = LoggingService.getLogger();
     @Rule
     public ExpectedException thrown = ExpectedException.none();
     @Before
     public void setUp() throws Exception {
         manager = Persistence.createEntityManagerFactory("primary").createEntityManager();
-        testee = new SimplePersistence(manager, TestEntity.class);
+        testee = new SimplePersistenceImpl(manager, TestEntity.class);
         // testee.getManager().getTransaction().begin();
     }
     @After
@@ -36,37 +39,36 @@ public class SimplePersistenceTest {
     }
     @Test
     public final void testSimplePersistence() {
-        assertThat(new SimplePersistence(manager, TestEntity.class), is(not(nullValue())));
+        // case: success
+        assertThat(new SimplePersistenceImpl(manager, TestEntity.class), is(not(nullValue())));
+        // case: exception
         thrown.handleAssertionErrors();
         thrown.expect(AssertionError.class);
-        new SimplePersistence(null, null);
-        new SimplePersistence(null, TestEntity.class);
-        new SimplePersistence(manager, null);
+        new SimplePersistenceImpl(null, null);
+        new SimplePersistenceImpl(null, TestEntity.class);
+        new SimplePersistenceImpl(manager, null);
     }
     @Test
     public final void testPersist() {
+        // case: success
         final TestEntity e01 = new TestEntity();
-        {
-            testee.getManager().getTransaction().begin();
-            e01.setName("n01");
-            testee.persist(e01);
-            testee.getManager().getTransaction().commit();
-        }
-        try {
-            testee.persist(e01);
-            testee.flush();
-            fail();
-        } catch (final TransactionRequiredException e) {
-        }
-        testee.getManager().getTransaction().begin();
+        ((SimplePersistenceImpl) testee).getManager().getTransaction().begin();
+        e01.setName("n01");
+        testee.persist(e01);
+        ((SimplePersistenceImpl) testee).getManager().getTransaction().commit();
+        // case: exception
+        thrown.expect(TransactionRequiredException.class);
         testee.persist(e01);
         testee.flush();
     }
     @Test
     public final void testDetach() {
         final TestEntity e01 = new TestEntity();
+        LOG.debug("{}", e01);
         testee.persist(e01);
+        LOG.debug("{}", e01);
         testee.detach(e01);
+        LOG.debug("{}", e01);
     }
     @Test
     public final void testMerge() {
