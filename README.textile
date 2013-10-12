@@ -61,17 +61,20 @@ h2. APサーバ(GlassFish)
 * GlassFish Server Open Source Edition 4.0
 ** Java EE 7 requires JDK 7
 
-h3. JDBCドライバをサーバへインストール
+h3. JDBCドライバをAPサーバへインストール
 
 <pre>
+$MAVEN_REPOはMavenリポジトリ、$GLASSFISH_HOMEはGlassFishホームディレクトリ
 $ cp $MAVEN_REPO/org/postgresql/postgresql/9.2-1003-jdbc4/postgresql-9.2-1003-jdbc4.jar $GLASSFISH_HOME/lib
 </pre>
 
-h3. 起動と停止(再起動)
+h3. APサーバの起動と停止と再起動
 
-asadmin start-domain
-asadmin stop-domain
-(asadmin restart-domain)
+<pre>
+$ asadmin start-domain
+$ asadmin stop-domain
+$ asadmin restart-domain
+</pre>
 
 h3. JDBCコネクションプールの作成 と JDBCリソースの作成
 
