@@ -95,42 +95,62 @@ $ asadmin list-jdbc-resources
 JDBCコネクションプールの削除
 $ asadmin delete-jdbc-resource jdbc/yoyo/primaryDatabase
 JDBCリソースの削除
- $ asadmin delete-jdbc-connection-pool yoyo_primary_pool
+$ asadmin delete-jdbc-connection-pool yoyo_primary_pool
 </pre>
 
-h3. 認証レルムの作成
+h3. 認証レルムの管理
 
-asadmin create-auth-realm --classname com.sun.enterprise.security.ee.auth.realm.jdbc.JDBCRealm --property jaas-context=jdbcRealm:datasource-jndi=jdbc/yoyo/primaryDatabase:user-table=public.member:group-table=public.member_auth:user-name-column=account:password-column=password:group-name-column=auth:digest-algorithm=SHA-256:encoding=Hex yoyo_primary_auth
+<pre>
+認証レルムの作成
+$ asadmin create-auth-realm --classname com.sun.enterprise.security.ee.auth.realm.jdbc.JDBCRealm --property jaas-context=jdbcRealm:datasource-jndi=jdbc/yoyo/primaryDatabase:user-table=public.member:group-table=public.member_auth:user-name-column=account:password-column=password:group-name-column=auth:digest-algorithm=SHA-256:encoding=Hex yoyo_primary_auth
 asadmin list-auth-realms
+認証レルムの削除
+$ asadmin delete-auth-realm yoyo_primary_auth
+</pre>
 
-// 例: 認証レルムの削除
-asadmin delete-auth-realm yoyo_primary_auth
+h3. JavaMailリソースの管理
 
-h3. JavaMailリソースの作成
+<pre>
+JavaMailリソースの作成
+$ asadmin create-javamail-resource --mailhost smtp.gmail.com --fromaddress yoyo@gmail.com --mailuser yoyo@gmail.com --transprotocol smtps --transprotocolclass com.sun.mail.smtp.SMTPSSLTransport --description "yoyo mail session" --property mail-smtps-password=xxxxxxxx:mail-smtps-auth=true mail/yoyo/primarySession
+$ asadmin list-javamail-resources
+JavaMailリソースの削除
+$ asadmin delete-javamail-resource mail/yoyo/primarySession
+</pre>
 
-asadmin create-javamail-resource --mailhost smtp.gmail.com --fromaddress yoyo@gmail.com --mailuser yoyo@gmail.com --transprotocol smtps --transprotocolclass com.sun.mail.smtp.SMTPSSLTransport --description "yoyo mail session" --property mail-smtps-password=xxxxxxxx:mail-smtps-auth=true mail/yoyo/primarySession
-asadmin list-javamail-resources
+h3. JMSリソースの管理
 
-// 例: JavaMailリソースの削除
-asadmin delete-javamail-resource mail/yoyo/primarySession
+<pre>
+JMSコネクションファクトリーの作成
+$ asadmin create-jms-resource --restype javax.jms.ConnectionFactory jms/yoyo/primaryConnectionFactory
+JMSキューの作成
+$ asadmin create-jms-resource --restype javax.jms.Queue jms/yoyo/primaryQueue
+JMSトピックの作成
+$ asadmin create-jms-resource --restype javax.jms.Topic jms/yoyo/primaryTopic
+JMSリソースの一覧
+$ asadmin list-jms-resources
+JMSコネクションファクトリーの削除
+$ asadmin delete-jms-resource jms/yoyo/primaryConnectionFactory
+JMSキューの削除
+$ asadmin delete-jms-resource jms/yoyo/primaryQueue
+JMSトピックの削除
+$ asadmin delete-jms-resource jms/yoyo/primaryTopic
+</pre>
 
-h3. JMSリソースの作成
+h3. ログ設定の管理
 
-asadmin create-jms-resource --restype javax.jms.ConnectionFactory jms/yoyo/primaryConnectionFactory
-asadmin create-jms-resource --restype javax.jms.Queue jms/yoyo/primaryQueue
-asadmin create-jms-resource --restype javax.jms.Topic jms/yoyo/primaryTopic
-asadmin list-jms-resources
+<pre>
+$ cp $YOYO_HOME/yoyo-fw/yoyo-fw-standard/src/test/resources/logback-test.xml $GLASSFISH_HOME/domains/domain1/config/logback.xml
+($YOYO_HOMEはプロジェクトディレクトリ、$GLASSFISH_HOMEはGlassFishホームディレクトリ)
+</pre>
 
-// 例: JMSリソースの削除
-asadmin delete-jms-resource jms/yoyo/primaryConnectionFactory
-asadmin delete-jms-resource jms/yoyo/primaryQueue
-asadmin delete-jms-resource jms/yoyo/primaryTopic
+h3. JVMオプションの管理
 
-h3. JVMオプションの作成
-
-asadmin create-jvm-options '-Dlogback.configurationFile=${com.sun.aas.instanceRoot}/config/logback.xml'
-asadmin list-jvm-options
-cp ./yoyo-fw/yoyo-fw-standard/src/test/resources/logback-test.xml $GLASSFISH_HOME/domains/domain1/config/logback.xml
-
-// 例: JVMオプションの削除
-asadmin delete-jvm-options -Dlogback.configurationFile=${com.sun.aas.instanceRoot}/config/logback.xml
+<pre>
+JVMオプションの作成
+$ asadmin create-jvm-options '-Dlogback.configurationFile=${com.sun.aas.instanceRoot}/config/logback.xml'
+JVMオプションの一覧
+$ asadmin list-jvm-options
+JVMオプションの削除
+$ asadmin delete-jvm-options -Dlogback.configurationFile=${com.sun.aas.instanceRoot}/config/logback.xml
+</pre>
