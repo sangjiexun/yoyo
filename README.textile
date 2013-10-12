@@ -64,8 +64,8 @@ h2. APサーバ(GlassFish)
 h3. JDBCドライバをAPサーバへインストール
 
 <pre>
-$MAVEN_REPOはMavenリポジトリ、$GLASSFISH_HOMEはGlassFishホームディレクトリ
 $ cp $MAVEN_REPO/org/postgresql/postgresql/9.2-1003-jdbc4/postgresql-9.2-1003-jdbc4.jar $GLASSFISH_HOME/lib
+($MAVEN_REPOはMavenリポジトリ、$GLASSFISH_HOMEはGlassFishホームディレクトリ)
 </pre>
 
 h3. APサーバの起動と停止と再起動
@@ -78,15 +78,20 @@ $ asadmin restart-domain
 
 h3. JDBCコネクションプールの作成 と JDBCリソースの作成
 
-asadmin create-jdbc-connection-pool --datasourceclassname org.postgresql.ds.PGConnectionPoolDataSource --restype javax.sql.ConnectionPoolDataSource --property portNumber=5432:user=yoyo:password=happyhacking:serverName=localhost:databaseName=yoyo yoyo_primary_pool
-asadmin ping-connection-pool yoyo_primary_pool
-asadmin list-jdbc-connection-pools
-asadmin create-jdbc-resource --connectionpoolid yoyo_primary_pool jdbc/yoyo/primaryDatabase
-asadmin list-jdbc-resources
+<pre>
+JDBCコネクションプールの作成 と JDBCリソースの作成
+$ asadmin create-jdbc-connection-pool --datasourceclassname org.postgresql.ds.PGConnectionPoolDataSource --restype javax.sql.ConnectionPoolDataSource --property portNumber=5432:user=yoyo:password=happyhacking:serverName=localhost:databaseName=yoyo yoyo_primary_pool
+$ asadmin ping-connection-pool yoyo_primary_pool
+$ asadmin list-jdbc-connection-pools
+$ asadmin create-jdbc-resource --connectionpoolid yoyo_primary_pool jdbc/yoyo/primaryDatabase
+$ asadmin list-jdbc-resources
+</pre>
 
-// 例: JDBCコネクションプールの削除 と JDBCリソースの削除
-asadmin delete-jdbc-resource jdbc/yoyo/primaryDatabase
-asadmin delete-jdbc-connection-pool yoyo_primary_pool
+<pre>
+JDBCコネクションプールの削除 と JDBCリソースの削除
+$ asadmin delete-jdbc-resource jdbc/yoyo/primaryDatabase
+$ asadmin delete-jdbc-connection-pool yoyo_primary_pool
+</pre>
 
 h3. 認証レルムの作成
 
