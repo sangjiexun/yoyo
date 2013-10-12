@@ -61,12 +61,14 @@ $ psql --username=yoyo yoyo
 
 h2. APサーバ(GlassFish)
 
+* GlassFish Server Open Source Edition 4.0
+** Java EE 7 requires JDK 7
+
 h3. JDBCドライバをサーバへインストール
 
-// 例: Unix
-cp ~/.m2/repository/org/postgresql/postgresql/9.2-1002-jdbc4/postgresql-9.2-1002-jdbc4.jar $GLASSFISH_HOME/lib
-// 例: Windows
-cp $USERPROFILE/.m2/repository/org/postgresql/postgresql/9.2-1002-jdbc4/postgresql-9.2-1002-jdbc4.jar /Applications/glassfish3/glassfish/lib
+<pre>
+$ cp $MAVEN_REPO/org/postgresql/postgresql/9.2-1003-jdbc4/postgresql-9.2-1003-jdbc4.jar $GLASSFISH_HOME/lib
+</pre>
 
 h3. 起動と停止(再起動)
 

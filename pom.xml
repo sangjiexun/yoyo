@@ -78,7 +78,7 @@
     <jeeunit-cdi.version>1.0.0</jeeunit-cdi.version>
     <jeeunit-glassfish.version>1.0.0</jeeunit-glassfish.version>
     <glassfish-embedded-all.version>4.0</glassfish-embedded-all.version>
-    <postgresql.version>9.2-1002-jdbc4</postgresql.version>
+    <postgresql.version>9.2-1003-jdbc4</postgresql.version>
   </properties>
   <repositories>
     <repository>
