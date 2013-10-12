@@ -32,24 +32,21 @@ $ createuser --username=postgres --createdb --encrypted --inherit --login --pwpr
 Enter password for new role: <---- "happyhacking" と入力する。 
 Enter it again: <---- "happyhacking" と入力する。 
 </pre>
-DBユーザの削除
 <pre>
+DBユーザの削除
 $ dropuser --username=postgres yoyo
 </pre>
 
 h3. データベースの作成と削除
 
-# データベースの作成
-## Unixのとき
 <pre>
+データベースの作成(Unix)
 $ createdb --username=yoyo --encoding=UTF8 --locale=ja_JP.UTF-8 --owner=yoyo --template=template0 yoyo
-</pre>
-## Windowsのとき
-<pre>
+データベースの作成(Windows)
 > createdb --username=yoyo --encoding=UTF8 --locale=Japanese_Japan.932 --owner=yoyo --template=template0 yoyo
 </pre>
-# データベースの削除
 <pre>
+データベースの削除
 $ dropdb --username=postgres yoyo
 </pre>
 
