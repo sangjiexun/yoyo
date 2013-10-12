@@ -26,13 +26,13 @@ h2. DBサーバの構築 (PostgreSQL)
 
 h3. DBユーザの作成と削除
 
-# DBユーザの作成
+DBユーザの作成
 <pre>
 $ createuser --username=postgres --createdb --encrypted --inherit --login --pwprompt --createrole --superuser yoyo
 Enter password for new role: <---- "happyhacking" と入力する。 
 Enter it again: <---- "happyhacking" と入力する。 
 </pre>
-# DBユーザの削除
+DBユーザの削除
 <pre>
 $ dropuser --username=postgres yoyo
 </pre>
