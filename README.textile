@@ -24,7 +24,7 @@ h2. DBサーバの構築 (PostgreSQL)
 
 * PostgreSQL 9.3.1
 
-h3. DBユーザの作成と削除
+h3. DBユーザの管理
 
 <pre>
 DBユーザの作成
