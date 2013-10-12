@@ -6,8 +6,8 @@
   <artifactId>yoyo</artifactId>
   <version>0.1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>yoyo</name>
-  <description>Enterprise Business Application Bootstrap.</description>
+  <name>YOYO</name>
+  <description>UUO (you-you-oh) [short for &quot;Un-Used Operation&quot;]</description>
   <url>http://nilcy.github.io/yoyo/maven/site/</url>
   <inceptionYear>2013</inceptionYear>
   <organization>

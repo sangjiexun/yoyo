@@ -1,12 +1,12 @@
-h1. yoyo
+h1. YOYO
 
-Enterprise Business Application Bootstrap.
+UUO (you-you-oh) [short for "Un-Used Operation"]
 
 h1. 環境構築の手順
 
 h2. Java開発環境の構築 (Eclipse)
 
-* Eclipse Juno(4.2) SR1 - Eclipse IDE for Java EE Developers
+* Eclipse Kepler Release - Eclipse Java EE IDE for Web Developers.
 
 h3. 拡張プラグイン導入#1 (Help -> Ecilpse Marketplace...)
 
@@ -15,7 +15,6 @@ h3. 拡張プラグイン導入#1 (Help -> Ecilpse Marketplace...)
 * GitHub Mylyn Connector
 * Checkstyle Plug-in
 * FindBugs Ecilpse Plugin
-* (Subversive - SVN Team Provider)
 
 h3. 拡張プラグイン導入#2 (Help -> Install New Software... ->)
 
@@ -23,22 +22,28 @@ h3. 拡張プラグイン導入#2 (Help -> Install New Software... ->)
 
 h2. DBサーバの構築 (PostgreSQL)
 
-h3. DBユーザの作成
+h3. DBユーザの作成と削除
 
-createuser --username=postgres --createdb --encrypted --inherit --login --pwprompt --createrole --superuser yoyo
+<pre>
+$ createuser --username=postgres --createdb --encrypted --inherit --login --pwprompt --createrole --superuser yoyo
+Enter password for new role: <---- "happyhacking" と入力する。 
+Enter it again: <---- "happyhacking" と入力する。 
+</pre>
 
-// 例: DBユーザの削除
-dropuser --username=postgres yoyo
+<pre>
+$ dropuser --username=postgres yoyo
+</pre>
 
-h3. データベースの作成
+h3. データベースの作成と削除
 
-// 例: Unix
-createdb --username=yoyo --encoding=UTF8 --locale=ja_JP.UTF-8 --owner=yoyo --template=template0 yoyo
-// 例: Windows
-createdb --username=yoyo --encoding=UTF8 --locale=Japanese_Japan.932 --owner=yoyo --template=template0 yoyo
+<pre>
+$ createdb --username=yoyo --encoding=UTF8 --locale=ja_JP.UTF-8 --owner=yoyo --template=template0 yoyo
+> createdb --username=yoyo --encoding=UTF8 --locale=Japanese_Japan.932 --owner=yoyo --template=template0 yoyo
+</pre>
 
-// 例: データベースの削除
-dropdb --username=postgres yoyo
+<pre>
+$ dropdb --username=postgres yoyo
+</pre>
 
 h3. データベースへの接続
 
