@@ -10,26 +10,29 @@ h2. Java開発環境の構築 (Eclipse)
 
 h3. 拡張プラグイン導入#1 (Help -> Ecilpse Marketplace...)
 
-* Maven Integration for Eclipse
-* EGit - Git Team Provider
-* GitHub Mylyn Connector
-* Checkstyle Plug-in
-* FindBugs Ecilpse Plugin
+# Maven Integration for Eclipse
+# EGit - Git Team Provider
+# GitHub Mylyn Connector
+# Checkstyle Plug-in
+# FindBugs Ecilpse Plugin
 
 h3. 拡張プラグイン導入#2 (Help -> Install New Software... ->)
 
-* Add -> http://propedit.sourceforge.jp/eclipse/updates/ (PropertiesEditor)
+# Add -> http://propedit.sourceforge.jp/eclipse/updates/ (PropertiesEditor)
 
 h2. DBサーバの構築 (PostgreSQL)
 
+* PostgreSQL 9.3.1
+
 h3. DBユーザの作成と削除
 
+# DBユーザの作成
 <pre>
 $ createuser --username=postgres --createdb --encrypted --inherit --login --pwprompt --createrole --superuser yoyo
 Enter password for new role: <---- "happyhacking" と入力する。 
 Enter it again: <---- "happyhacking" と入力する。 
 </pre>
-
+# DBユーザの削除
 <pre>
 $ dropuser --username=postgres yoyo
 </pre>
@@ -47,9 +50,11 @@ $ dropdb --username=postgres yoyo
 
 h3. データベースへの接続
 
-psql --username=yoyo yoyo
+<pre>
+$ psql --username=yoyo yoyo
+</pre>
 
-h2. アプリケーションサーバ(GlassFish)
+h2. APサーバ(GlassFish)
 
 h3. JDBCドライバをサーバへインストール
 
