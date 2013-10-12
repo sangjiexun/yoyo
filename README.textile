@@ -37,7 +37,7 @@ DBユーザの削除
 $ dropuser --username=postgres yoyo
 </pre>
 
-h3. データベースの作成と削除
+h3. データベースの管理
 
 <pre>
 データベースの作成(Unix)
@@ -48,11 +48,7 @@ $ createdb --username=yoyo --encoding=UTF8 --locale=ja_JP.UTF-8 --owner=yoyo --t
 <pre>
 データベースの削除
 $ dropdb --username=postgres yoyo
-</pre>
-
-h3. データベースへの接続
-
-<pre>
+データベースへの接続
 $ psql --username=yoyo yoyo
 </pre>
 
@@ -61,22 +57,26 @@ h2. APサーバ(GlassFish)
 * GlassFish Server Open Source Edition 4.0
 ** Java EE 7 requires JDK 7
 
-h3. JDBCドライバをAPサーバへインストール
+h3. JDBCドライバの管理
 
 <pre>
+JDBCドライバをAPサーバへインストール
 $ cp $MAVEN_REPO/org/postgresql/postgresql/9.2-1003-jdbc4/postgresql-9.2-1003-jdbc4.jar $GLASSFISH_HOME/lib
 ($MAVEN_REPOはMavenリポジトリ、$GLASSFISH_HOMEはGlassFishホームディレクトリ)
 </pre>
 
-h3. APサーバの起動と停止と再起動
+h3. APサーバの管理
 
 <pre>
+APサーバの起動
 $ asadmin start-domain
+APサーバの停止
 $ asadmin stop-domain
+APサーバの再起動
 $ asadmin restart-domain
 </pre>
 
-h3. JDBCコネクションプールの作成 と JDBCリソースの作成
+h3. JDBCコネクションプールとJDBCリソースの管理
 
 <pre>
 JDBCコネクションプールの作成
