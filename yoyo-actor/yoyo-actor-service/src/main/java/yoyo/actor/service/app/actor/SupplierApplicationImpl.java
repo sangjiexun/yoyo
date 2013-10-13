@@ -12,7 +12,7 @@ import yoyo.actor.service.domain.Supplier;
 import yoyo.actor.service.domain.SupplierRepository;
 import yoyo.framework.enterprise.app.AbstractSimpleRepositoryApplication;
 import yoyo.framework.enterprise.domain.SimpleRepository;
-import yoyo.framework.enterprise.shared.Tracer;
+import yoyo.framework.enterprise.infra.logging.TraceLogger;
 import yoyo.framework.standard.shared.SimpleFilter;
 /**
  * 調達先アプリケーション
@@ -20,7 +20,7 @@ import yoyo.framework.standard.shared.SimpleFilter;
  */
 @Stateless
 // @Default
-@Tracer
+@TraceLogger
 public class SupplierApplicationImpl extends
     AbstractSimpleRepositoryApplication<Supplier, BigDecimal, SimpleFilter> implements
     SupplierApplication {

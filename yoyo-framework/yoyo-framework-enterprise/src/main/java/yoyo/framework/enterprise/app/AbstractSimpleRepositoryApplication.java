@@ -10,8 +10,8 @@ import java.util.Collection;
 import yoyo.framework.enterprise.app.SimpleRepositoryApplication;
 import yoyo.framework.enterprise.domain.ConstraintsException;
 import yoyo.framework.enterprise.domain.SimpleRepository;
+import yoyo.framework.enterprise.infra.logging.TraceLogger;
 import yoyo.framework.enterprise.shared.Persistable;
-import yoyo.framework.enterprise.shared.Tracer;
 import yoyo.framework.standard.shared.CommonUtils;
 /**
  * 基本リポジトリアプリケーション
@@ -20,7 +20,7 @@ import yoyo.framework.standard.shared.CommonUtils;
  * @param <F> 検索条件オブジェクト型 TODO extends ValueObject<?>
  * @author nilcy
  */
-@Tracer
+@TraceLogger
 public abstract class AbstractSimpleRepositoryApplication<E extends Persistable<ID>, ID extends Serializable, F extends Serializable>
     implements SimpleRepositoryApplication<E, ID, F> {
     /** 製品番号 */

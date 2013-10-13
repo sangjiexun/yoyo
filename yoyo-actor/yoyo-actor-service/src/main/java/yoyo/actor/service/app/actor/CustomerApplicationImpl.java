@@ -12,7 +12,7 @@ import yoyo.actor.service.domain.Customer;
 import yoyo.actor.service.domain.CustomerRepository;
 import yoyo.framework.enterprise.app.AbstractSimpleRepositoryApplication;
 import yoyo.framework.enterprise.domain.SimpleRepository;
-import yoyo.framework.enterprise.shared.Tracer;
+import yoyo.framework.enterprise.infra.logging.TraceLogger;
 import yoyo.framework.standard.shared.SimpleFilter;
 /**
  * 得意先アプリケーション
@@ -20,7 +20,7 @@ import yoyo.framework.standard.shared.SimpleFilter;
  */
 @Stateless
 // @Default
-@Tracer
+@TraceLogger
 public class CustomerApplicationImpl extends
     AbstractSimpleRepositoryApplication<Customer, BigDecimal, SimpleFilter> implements
     CustomerApplication {

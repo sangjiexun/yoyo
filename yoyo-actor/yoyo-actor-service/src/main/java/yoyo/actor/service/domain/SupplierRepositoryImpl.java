@@ -10,15 +10,15 @@ import javax.inject.Inject;
 import yoyo.actor.service.domain.Supplier;
 import yoyo.actor.service.domain.PersistenceServiceAnnotation.SupplierPersistenceService;
 import yoyo.framework.enterprise.domain.AbstractQueryRepositoryImpl;
+import yoyo.framework.enterprise.infra.logging.TraceLogger;
 import yoyo.framework.enterprise.infra.persistence.QueryPersistenceService;
-import yoyo.framework.enterprise.shared.Tracer;
 import yoyo.framework.standard.shared.SimpleFilter;
 /**
  * Supplier repository implementation.
  * @author nilcy
  */
 @Default
-@Tracer
+@TraceLogger
 public class SupplierRepositoryImpl extends
     AbstractQueryRepositoryImpl<Supplier, BigDecimal, SimpleFilter> implements SupplierRepository {
     /** 製品番号 */

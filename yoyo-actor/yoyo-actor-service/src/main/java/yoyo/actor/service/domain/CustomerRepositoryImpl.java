@@ -10,15 +10,15 @@ import javax.inject.Inject;
 import yoyo.actor.service.domain.Customer;
 import yoyo.actor.service.domain.PersistenceServiceAnnotation.CustomerPersistenceService;
 import yoyo.framework.enterprise.domain.AbstractQueryRepositoryImpl;
+import yoyo.framework.enterprise.infra.logging.TraceLogger;
 import yoyo.framework.enterprise.infra.persistence.QueryPersistenceService;
-import yoyo.framework.enterprise.shared.Tracer;
 import yoyo.framework.standard.shared.SimpleFilter;
 /**
  * Customer repository implementation.
  * @author nilcy
  */
 @Default
-@Tracer
+@TraceLogger
 public class CustomerRepositoryImpl extends
     AbstractQueryRepositoryImpl<Customer, BigDecimal, SimpleFilter> implements CustomerRepository {
     /** 製品番号 */

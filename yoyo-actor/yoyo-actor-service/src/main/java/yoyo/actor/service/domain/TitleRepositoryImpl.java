@@ -10,15 +10,15 @@ import javax.inject.Inject;
 import yoyo.actor.service.domain.Title;
 import yoyo.actor.service.domain.PersistenceServiceAnnotation.TitlePersistenceService;
 import yoyo.framework.enterprise.domain.AbstractQueryRepositoryImpl;
+import yoyo.framework.enterprise.infra.logging.TraceLogger;
 import yoyo.framework.enterprise.infra.persistence.QueryPersistenceService;
-import yoyo.framework.enterprise.shared.Tracer;
 import yoyo.framework.standard.shared.SimpleFilter;
 /**
  * Title repository implementation.
  * @author nilcy
  */
 @Default
-@Tracer
+@TraceLogger
 public class TitleRepositoryImpl extends
     AbstractQueryRepositoryImpl<Title, BigDecimal, SimpleFilter> implements TitleRepository {
     /** 製品番号 */

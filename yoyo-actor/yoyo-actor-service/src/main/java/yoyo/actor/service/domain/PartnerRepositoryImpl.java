@@ -10,15 +10,15 @@ import javax.inject.Inject;
 import yoyo.actor.service.domain.Partner;
 import yoyo.actor.service.domain.PersistenceServiceAnnotation.PartnerPersistenceService;
 import yoyo.framework.enterprise.domain.AbstractQueryRepositoryImpl;
+import yoyo.framework.enterprise.infra.logging.TraceLogger;
 import yoyo.framework.enterprise.infra.persistence.QueryPersistenceService;
-import yoyo.framework.enterprise.shared.Tracer;
 import yoyo.framework.standard.shared.SimpleFilter;
 /**
  * Partner repository implementation.
  * @author nilcy
  */
 @Default
-@Tracer
+@TraceLogger
 public class PartnerRepositoryImpl extends
     AbstractQueryRepositoryImpl<Partner, BigDecimal, SimpleFilter> implements PartnerRepository {
     /** 製品番号 */

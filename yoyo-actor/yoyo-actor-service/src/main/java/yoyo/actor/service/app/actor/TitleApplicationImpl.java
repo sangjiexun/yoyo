@@ -12,7 +12,7 @@ import yoyo.actor.service.domain.Title;
 import yoyo.actor.service.domain.TitleRepository;
 import yoyo.framework.enterprise.app.AbstractSimpleRepositoryApplication;
 import yoyo.framework.enterprise.domain.SimpleRepository;
-import yoyo.framework.enterprise.shared.Tracer;
+import yoyo.framework.enterprise.infra.logging.TraceLogger;
 import yoyo.framework.standard.shared.SimpleFilter;
 /**
  * 職名アプリケーション
@@ -20,7 +20,7 @@ import yoyo.framework.standard.shared.SimpleFilter;
  */
 @Stateless
 // @Default
-@Tracer
+@TraceLogger
 public class TitleApplicationImpl extends
     AbstractSimpleRepositoryApplication<Title, BigDecimal, SimpleFilter> implements
     TitleApplication {

@@ -10,15 +10,15 @@ import javax.inject.Inject;
 import yoyo.actor.service.domain.misc.IndustryClass;
 import yoyo.actor.service.domain.misc.PersistenceServiceAnnotation.IndustryClassPersistenceService;
 import yoyo.framework.enterprise.domain.AbstractQueryRepositoryImpl;
+import yoyo.framework.enterprise.infra.logging.TraceLogger;
 import yoyo.framework.enterprise.infra.persistence.QueryPersistenceService;
-import yoyo.framework.enterprise.shared.Tracer;
 import yoyo.framework.standard.shared.SimpleFilter;
 /**
  * 業種リポジトリ
  * @author nilcy
  */
 @Default
-@Tracer
+@TraceLogger
 public class IndustryClassRepositoryImpl extends
     AbstractQueryRepositoryImpl<IndustryClass, BigDecimal, SimpleFilter> implements
     IndustryClassRepository {

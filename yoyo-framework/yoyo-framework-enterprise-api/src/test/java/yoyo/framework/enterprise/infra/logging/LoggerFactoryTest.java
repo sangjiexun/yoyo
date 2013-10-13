@@ -3,7 +3,7 @@
 // GNU AFFERO GENERAL PUBLIC LICENSE Version 3, 19 November 2007
 // http://www.gnu.org/licenses/agpl-3.0.txt
 // ========================================================================
-package yoyo.framework.enterprise.shared;
+package yoyo.framework.enterprise.infra.logging;
 import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
 import java.util.logging.Logger;
@@ -13,19 +13,18 @@ import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.shrinkwrap.api.spec.JavaArchive;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import yoyo.framework.enterprise.shared.LoggerProducer;
 /**
- * {@link LoggerProducer}
+ * {@link LoggerFactory}
  * @author nilcy
  */
 @RunWith(Arquillian.class)
 @SuppressWarnings("all")
-public class LoggerProducerTest {
+public class LoggerFactoryTest {
     @Inject
     private Logger testee;
     @Deployment
     public static JavaArchive deployment() {
-        return ArquillianDeployment.defaultDeployment();
+        return ArquillianArchive.defaultDeployment();
     }
     @Test
     public void test() {

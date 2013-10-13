@@ -13,14 +13,14 @@ import yoyo.actor.service.domain.MemberFilter;
 import yoyo.actor.service.domain.MemberRepository;
 import yoyo.framework.enterprise.app.AbstractSimpleRepositoryApplication;
 import yoyo.framework.enterprise.domain.SimpleRepository;
-import yoyo.framework.enterprise.shared.Tracer;
+import yoyo.framework.enterprise.infra.logging.TraceLogger;
 /**
  * 社員アプリケーション
  * @author nilcy
  */
 @Stateless
 // @Default
-@Tracer
+@TraceLogger
 public class MemberApplicationImpl extends
     AbstractSimpleRepositoryApplication<Member, BigDecimal, MemberFilter> implements
     MemberApplication {

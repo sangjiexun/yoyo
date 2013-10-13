@@ -10,15 +10,15 @@ import javax.inject.Inject;
 import yoyo.actor.service.domain.Level;
 import yoyo.actor.service.domain.PersistenceServiceAnnotation.LevelPersistenceService;
 import yoyo.framework.enterprise.domain.AbstractQueryRepositoryImpl;
+import yoyo.framework.enterprise.infra.logging.TraceLogger;
 import yoyo.framework.enterprise.infra.persistence.QueryPersistenceService;
-import yoyo.framework.enterprise.shared.Tracer;
 import yoyo.framework.standard.shared.SimpleFilter;
 /**
  * Level repository implementation.
  * @author nilcy
  */
 @Default
-@Tracer
+@TraceLogger
 public class LevelRepositoryImpl extends
     AbstractQueryRepositoryImpl<Level, BigDecimal, SimpleFilter> implements LevelRepository {
     /** 製品番号 */

@@ -17,14 +17,14 @@ import yoyo.actor.service.domain.MemberFilter;
 import yoyo.actor.service.domain.Member_;
 import yoyo.actor.service.domain.PersistenceServiceAnnotation.MemberPersistenceService;
 import yoyo.framework.enterprise.domain.AbstractQueryRepositoryImpl;
+import yoyo.framework.enterprise.infra.logging.TraceLogger;
 import yoyo.framework.enterprise.infra.persistence.QueryPersistenceService;
-import yoyo.framework.enterprise.shared.Tracer;
 /**
  * Member repository implementation.
  * @author nilcy
  */
 @Default
-@Tracer
+@TraceLogger
 public class MemberRepositoryImpl extends
     AbstractQueryRepositoryImpl<Member, BigDecimal, MemberFilter> implements MemberRepository {
     /** 製品番号 */

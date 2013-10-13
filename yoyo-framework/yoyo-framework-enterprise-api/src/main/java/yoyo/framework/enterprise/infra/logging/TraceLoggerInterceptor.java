@@ -3,22 +3,22 @@
 // GNU AFFERO GENERAL PUBLIC LICENSE Version 3, 19 November 2007
 // http://www.gnu.org/licenses/agpl-3.0.txt
 // ========================================================================
-package yoyo.framework.enterprise.shared;
+package yoyo.framework.enterprise.infra.logging;
 import java.util.logging.Logger;
 import javax.interceptor.AroundInvoke;
 import javax.interceptor.Interceptor;
 import javax.interceptor.InvocationContext;
 import yoyo.framework.standard.shared.MessageUtils;
 /**
- * 追跡者の横断処理
+ * トレースロガーのインターセプタ
  * @author nilcy
  */
 @Interceptor
-@Tracer
-public class TracerInterceptor {
+@TraceLogger
+public class TraceLoggerInterceptor {
     /**
-     * 追跡ログの出力
-     * @param aContext 横断コンテキスト
+     * トレースログの出力
+     * @param aContext コンテキスト
      * @return 処理結果
      * @throws Exception 処理例外
      */

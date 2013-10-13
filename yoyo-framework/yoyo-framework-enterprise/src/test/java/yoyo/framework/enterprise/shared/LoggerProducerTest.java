@@ -12,9 +12,9 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import com.googlecode.jeeunit.JeeunitRunner;
 import com.googlecode.jeeunit.Transactional;
-import yoyo.framework.enterprise.shared.LoggerProducer;
+import yoyo.framework.enterprise.infra.logging.LoggerFactory;
 /**
- * {@link LoggerProducer}
+ * {@link LoggerFactory}
  * @author nilcy
  */
 @RunWith(JeeunitRunner.class)

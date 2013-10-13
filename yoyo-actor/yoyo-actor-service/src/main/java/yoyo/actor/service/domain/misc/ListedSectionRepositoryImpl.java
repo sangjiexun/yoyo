@@ -10,15 +10,15 @@ import javax.inject.Inject;
 import yoyo.actor.service.domain.misc.ListedSection;
 import yoyo.actor.service.domain.misc.PersistenceServiceAnnotation.ListedSectionPersistenceService;
 import yoyo.framework.enterprise.domain.AbstractQueryRepositoryImpl;
+import yoyo.framework.enterprise.infra.logging.TraceLogger;
 import yoyo.framework.enterprise.infra.persistence.QueryPersistenceService;
-import yoyo.framework.enterprise.shared.Tracer;
 import yoyo.framework.standard.shared.SimpleFilter;
 /**
  * Listed section repository implementation.
  * @author nilcy
  */
 @Default
-@Tracer
+@TraceLogger
 public class ListedSectionRepositoryImpl extends
     AbstractQueryRepositoryImpl<ListedSection, BigDecimal, SimpleFilter> implements
     ListedSectionRepository {

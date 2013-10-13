@@ -10,15 +10,15 @@ import javax.inject.Inject;
 import yoyo.actor.service.domain.Organ;
 import yoyo.actor.service.domain.PersistenceServiceAnnotation.OrganPersistenceService;
 import yoyo.framework.enterprise.domain.AbstractQueryRepositoryImpl;
+import yoyo.framework.enterprise.infra.logging.TraceLogger;
 import yoyo.framework.enterprise.infra.persistence.QueryPersistenceService;
-import yoyo.framework.enterprise.shared.Tracer;
 import yoyo.framework.standard.shared.SimpleFilter;
 /**
  * Organization repository implementation.
  * @author nilcy
  */
 @Default
-@Tracer
+@TraceLogger
 public class OrganRepositoryImpl extends
     AbstractQueryRepositoryImpl<Organ, BigDecimal, SimpleFilter> implements OrganRepository {
     /** 製品番号 */
