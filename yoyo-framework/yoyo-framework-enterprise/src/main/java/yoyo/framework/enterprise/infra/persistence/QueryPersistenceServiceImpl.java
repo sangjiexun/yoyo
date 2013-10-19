@@ -15,16 +15,19 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
-import yoyo.framework.enterprise.infra.persistence.QueryPersistenceService;
 import yoyo.framework.enterprise.shared.Persistable;
 import yoyo.framework.standard.shared.Pageable;
 import yoyo.framework.standard.shared.Sort.Direction;
 import yoyo.framework.standard.shared.Sort.Order;
 /**
  * 先進データ永続化サービス(JPA2/CriteriaQuery)
- * <p>
- * {@link SimplePersistenceServiceImpl} へクエリオブジェクト(Criteria)を追加したサービスである。(クエリオブジェクト@PofEAA) である。
- * </p>
+ * <ol>
+ * <li>{@link SimplePersistenceServiceImpl} へクエリオブジェクト(Criteria)を追加したサービスである。</li>
+ * </ol>
+ * <dl>
+ * <dt>不変条件</dt>
+ * <dd>なし</dd>
+ * </dl>
  * @param <E> エンティティ型
  * @param <ID> 識別子オブジェクト型
  * @since JPA 2.0
@@ -67,16 +70,22 @@ public class QueryPersistenceServiceImpl<E extends Persistable<ID>, ID extends S
     public Root<E> root() {
         return root;
     }
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     * <ol>
+     * <li>{@link EntityManager#createQuery(CriteriaQuery)}へ委譲する。</li>
+     * </ol>
+     */
     @Override
     public TypedQuery<E> createQuery() {
         return manager.createQuery(query);
     }
     /**
      * {@inheritDoc}
-     * <p>
-     * ページ条件があるとき、オフセット、ページサイズ、ソート条件をクエリへ設定して、範囲指定クエリを作成する。 ページ条件がないとき、クエリを作成する。
-     * </p>
+     * <ol>
+     * <li>ページ条件があるとき、オフセット、ページサイズ、ソート条件をクエリへ設定して、範囲指定クエリを作成する。</li>
+     * <li>ページ条件がないとき、クエリを作成する。</li>
+     * </ol>
      */
     @Override
     public TypedQuery<E> createQuery(final Pageable pageable) {
@@ -99,9 +108,10 @@ public class QueryPersistenceServiceImpl<E extends Persistable<ID>, ID extends S
     }
     /**
      * {@inheritDoc}
-     * <p>
-     * WHERE句がないとき表明エラーとする。標準ルートとWHERE句をもとに件数クエリを作成する。
-     * </p>
+     * <ol>
+     * <li>WHERE句がないとき表明エラーとする。</li>
+     * <li>標準ルートとWHERE句をもとに件数クエリを作成する。</li>
+     * </ol>
      */
     @Override
     public TypedQuery<Long> createCountQuery(final Predicate expression) {

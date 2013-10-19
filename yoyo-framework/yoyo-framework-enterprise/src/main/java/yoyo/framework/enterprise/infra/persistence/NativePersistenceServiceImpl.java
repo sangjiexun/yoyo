@@ -8,13 +8,16 @@ import java.io.Serializable;
 import javax.enterprise.inject.Default;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
-import yoyo.framework.enterprise.infra.persistence.NativePersistenceService;
 import yoyo.framework.enterprise.shared.Persistable;
 /**
  * 原始データ永続化サービス(JPA2/NativeQuery)
- * <p>
- * {@link SimplePersistenceServiceImpl} へDB固有クエリ(SQL)を追加したサービスである。
- * </p>
+ * <ol>
+ * <li>{@link SimplePersistenceServiceImpl} へDB固有クエリ(SQL)を追加したサービスである。</li>
+ * </ol>
+ * <dl>
+ * <dt>不変条件</dt>
+ * <dd>なし</dd>
+ * </dl>
  * @param <E> エンティティ型
  * @param <ID> 識別子オブジェクト型
  * @since JPA 1.0
@@ -33,17 +36,32 @@ public class NativePersistenceServiceImpl<E extends Persistable<ID>, ID extends 
     public NativePersistenceServiceImpl(final EntityManager manager, final Class<E> clazz) {
         super(manager, clazz);
     }
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     * <ol>
+     * <li>{@link EntityManager#createNativeQuery(String)}へ委譲する。</li>
+     * </ol>
+     */
     @Override
     public Query createNativeQuery(final String sql) {
         return manager.createNativeQuery(sql);
     }
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     * <ol>
+     * <li>{@link EntityManager#createNativeQuery(String, Class)}へ委譲する。</li>
+     * </ol>
+     */
     @Override
     public Query createNativeQuery(final String sql, final Class<?> resultClass) {
         return manager.createNativeQuery(sql, resultClass);
     }
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     * <ol>
+     * <li>{@link EntityManager#createNativeQuery(String, String)}へ委譲する。</li>
+     * </ol>
+     */
     @Override
     public Query createNativeQuery(final String sql, final String resultSetMappingName) {
         return manager.createNativeQuery(sql, resultSetMappingName);

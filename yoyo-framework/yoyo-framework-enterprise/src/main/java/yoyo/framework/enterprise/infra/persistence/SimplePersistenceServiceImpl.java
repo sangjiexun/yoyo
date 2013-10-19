@@ -12,18 +12,19 @@ import javax.enterprise.inject.Default;
 import javax.persistence.EntityManager;
 import javax.persistence.LockModeType;
 import javax.persistence.TypedQuery;
-import yoyo.framework.enterprise.infra.persistence.SimplePersistenceService;
 import yoyo.framework.enterprise.shared.Persistable;
 /**
  * 基本データ永続化サービス(JPA2)
- * <p>
- * 不変表明
+ * <dl>
+ * <dt>不変条件</dt>
+ * <dd>
  * <ol>
  * <li>インスタンス化するときにエンティティのマネージャとクラスを保持して、そのあと変更しない。</li>
  * <li>エンティティのライフサイクル(コンテキスト状態)に応じたJPAの基本操作を提供すること。</li>
  * <li>DBトランザクションに関する操作を実行しない。(暗黙的にトランザクションタイプ=JTAを想定している)</li>
  * </ol>
- * </p>
+ * </dd>
+ * </dl>
  * @param <E> エンティティ型
  * @param <ID> 識別子オブジェクト型
  * @since JPA 2.1
@@ -40,10 +41,16 @@ public class SimplePersistenceServiceImpl<E extends Persistable<ID>, ID extends 
     protected Class<E> clazz;
     /**
      * コンストラクタ(汎用)
-     * <ul>
+     * <ol>
      * <li>各エンティティに依存しない汎用的な永続化サービスのために使用すること。</li>
      * <li>データ永続化はインフラストラクチャ層のサービスで、エンティティに依存すべきでないため<b>推奨</b>する。</li>
-     * </ul>
+     * </ol>
+     * <dl>
+     * <dt>事前条件</dt>
+     * <dd>引数がNULLでないこと。</dd>
+     * <dt>事後条件</dt>
+     * <dd>引数をインスタンス変数へ保持する。</dd>
+     * </dl>
      * @param manager エンティティマネージャ
      * @param clazz エンティティクラス
      */
@@ -54,29 +61,47 @@ public class SimplePersistenceServiceImpl<E extends Persistable<ID>, ID extends 
     }
     /**
      * コンストラクタ(個別)
-     * <ul>
+     * <ol>
      * <li>各エンティティに依存した個別の永続化サービスのために使用すること。</li>
      * <li>データ永続化はインフラストラクチャ層のサービスで、エンティティに依存すべきでないため<b>非推奨</b>とする。</li>
      * <li>※(具象クラスのため)エンティティ型からエンティティクラスを実行時に取得できるため引数は不要となる。</li>
-     * </ul>
+     * </ol>
+     * <dl>
+     * <dt>事前条件</dt>
+     * <dd>引数がNULLでないこと。</dd>
+     * <dt>事後条件</dt>
+     * <dd>引数をインスタンス変数へ保持する。エンティティクラスは実行時に取得してインスタンス変数へ保持する。</dd>
+     * </dl>
      * @param manager エンティティマネージャ
      */
     @SuppressWarnings("unchecked")
     public SimplePersistenceServiceImpl(final EntityManager manager) {
+        assert manager != null;
         this.manager = manager;
         clazz = (Class<E>) ((ParameterizedType) this.getClass().getGenericSuperclass())
             .getActualTypeArguments()[0];
     }
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     * <dl>
+     * <dt>事前条件</dt>
+     * <dd>なし</dd>
+     * <dt>事後条件</dt>
+     * <dd>{@link EntityManager#persist(Object)}へ委譲する。</dd>
+     * </dl>
+     */
     @Override
     public <S extends E> void persist(final S entity) {
         manager.persist(entity);
     }
     /**
      * {@inheritDoc}
-     * <p>
-     * エンティティのクラスを指定して、ID検索する。
-     * </p>
+     * <dl>
+     * <dt>事前条件</dt>
+     * <dd>なし</dd>
+     * <dt>事後条件</dt>
+     * <dd>{@link EntityManager#find(Class, Object)}へ委譲する。</dd>
+     * </dl>
      */
     @Override
     public E find(final ID id) {
@@ -84,9 +109,12 @@ public class SimplePersistenceServiceImpl<E extends Persistable<ID>, ID extends 
     }
     /**
      * {@inheritDoc}
-     * <p>
-     * エンティティのクラスを指定して、ID検索する。楽観ロック/悲観ロックなどを指定する。
-     * </p>
+     * <dl>
+     * <dt>事前条件</dt>
+     * <dd>なし</dd>
+     * <dt>事後条件</dt>
+     * <dd>{@link EntityManager#find(Class, Object, LockModeType)}へ委譲する。</dd>
+     * </dl>
      */
     @Override
     public E find(final ID id, final LockModeType lockModeType) {
@@ -94,9 +122,12 @@ public class SimplePersistenceServiceImpl<E extends Persistable<ID>, ID extends 
     }
     /**
      * {@inheritDoc}
-     * <p>
-     * エンティティのクラスを指定して、ID検索する。プロパティを指定する。
-     * </p>
+     * <dl>
+     * <dt>事前条件</dt>
+     * <dd>なし</dd>
+     * <dt>事後条件</dt>
+     * <dd>{@link EntityManager#find(Class, Object, Map)}へ委譲する。</dd>
+     * </dl>
      */
     @Override
     public E find(final ID id, final Map<String, Object> properties) {
@@ -104,29 +135,51 @@ public class SimplePersistenceServiceImpl<E extends Persistable<ID>, ID extends 
     }
     /**
      * {@inheritDoc}
-     * <p>
-     * エンティティのクラスを指定して、ID検索する。楽観ロック/悲観ロックなどとプロパティを指定する。
-     * </p>
+     * <dl>
+     * <dt>事前条件</dt>
+     * <dd>なし</dd>
+     * <dt>事後条件</dt>
+     * <dd>{@link EntityManager#find(Class, Object, LockModeType)}へ委譲する。</dd>
+     * </dl>
      */
     @Override
     public E find(final ID id, final LockModeType lockModeType, final Map<String, Object> properties) {
         return manager.find(clazz, id, lockModeType);
     }
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     * <dl>
+     * <dt>事前条件</dt>
+     * <dd>なし</dd>
+     * <dt>事後条件</dt>
+     * <dd>{@link EntityManager#merge(Object)}へ委譲する。</dd>
+     * </dl>
+     */
     @Override
     public <S extends E> S merge(final S entity) {
         return manager.merge(entity);
     }
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     * <dl>
+     * <dt>事前条件</dt>
+     * <dd>なし</dd>
+     * <dt>事後条件</dt>
+     * <dd>{@link EntityManager#remove(Object)}へ委譲する。</dd>
+     * </dl>
+     */
     @Override
     public void remove(final E entity) {
         manager.remove(entity);
     }
     /**
      * {@inheritDoc}
-     * <p>
-     * エンティティのクラスを指定して、更新する。
-     * </p>
+     * <dl>
+     * <dt>事前条件</dt>
+     * <dd>なし</dd>
+     * <dt>事後条件</dt>
+     * <dd>{@link EntityManager#refresh(Object)}へ委譲する。</dd>
+     * </dl>
      */
     @Override
     public void refresh(final E entity) {
@@ -134,9 +187,12 @@ public class SimplePersistenceServiceImpl<E extends Persistable<ID>, ID extends 
     }
     /**
      * {@inheritDoc}
-     * <p>
-     * エンティティのクラスを指定して、更新する。楽観ロック/悲観ロックなどを指定する。
-     * </p>
+     * <dl>
+     * <dt>事前条件</dt>
+     * <dd>なし</dd>
+     * <dt>事後条件</dt>
+     * <dd>{@link EntityManager#refresh(Object, LockModeType)}へ委譲する。</dd>
+     * </dl>
      */
     @Override
     public void refresh(final E entity, final LockModeType lockModeType) {
@@ -144,9 +200,12 @@ public class SimplePersistenceServiceImpl<E extends Persistable<ID>, ID extends 
     }
     /**
      * {@inheritDoc}
-     * <p>
-     * エンティティのクラスを指定して、更新する。プロパティを指定する。
-     * </p>
+     * <dl>
+     * <dt>事前条件</dt>
+     * <dd>なし</dd>
+     * <dt>事後条件</dt>
+     * <dd>{@link EntityManager#refresh(Object, Map)}へ委譲する。</dd>
+     * </dl>
      */
     @Override
     public void refresh(final E entity, final Map<String, Object> properties) {
@@ -154,9 +213,12 @@ public class SimplePersistenceServiceImpl<E extends Persistable<ID>, ID extends 
     }
     /**
      * {@inheritDoc}
-     * <p>
-     * エンティティのクラスを指定して、更新する。楽観ロック/悲観ロックなどとプロパティを指定する。
-     * </p>
+     * <dl>
+     * <dt>事前条件</dt>
+     * <dd>なし</dd>
+     * <dt>事後条件</dt>
+     * <dd>{@link EntityManager#refresh(Object, LockModeType, Map)}へ委譲する。</dd>
+     * </dl>
      */
     @Override
     public void refresh(final E entity, final LockModeType lockModeType,
@@ -165,9 +227,12 @@ public class SimplePersistenceServiceImpl<E extends Persistable<ID>, ID extends 
     }
     /**
      * {@inheritDoc}
-     * <p>
-     * エンティティのクラスを指定して、保護する。楽観ロック/悲観ロックなどを指定する。
-     * </p>
+     * <dl>
+     * <dt>事前条件</dt>
+     * <dd>なし</dd>
+     * <dt>事後条件</dt>
+     * <dd>{@link EntityManager#lock(Object, LockModeType)}へ委譲する。</dd>
+     * </dl>
      */
     @Override
     public void lock(final E entity, final LockModeType lockModeType) {
@@ -175,52 +240,119 @@ public class SimplePersistenceServiceImpl<E extends Persistable<ID>, ID extends 
     }
     /**
      * {@inheritDoc}
-     * <p>
-     * エンティティのクラスを指定して、保護する。楽観ロック/悲観ロックなどとプロパティを指定する。
-     * </p>
+     * <dl>
+     * <dt>事前条件</dt>
+     * <dd>なし</dd>
+     * <dt>事後条件</dt>
+     * <dd>{@link EntityManager#lock(Object, LockModeType, Map)}へ委譲する。</dd>
+     * </dl>
      */
     @Override
     public void lock(final E entity, final LockModeType lockModeType,
         final Map<String, Object> properties) {
-        manager.lock(entity, lockModeType);
+        manager.lock(entity, lockModeType, properties);
     }
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     * <dl>
+     * <dt>事前条件</dt>
+     * <dd>なし</dd>
+     * <dt>事後条件</dt>
+     * <dd>{@link EntityManager#flush()}へ委譲する。</dd>
+     * </dl>
+     */
     @Override
     public void flush() {
         manager.flush();
     }
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     * <dl>
+     * <dt>事前条件</dt>
+     * <dd>なし</dd>
+     * <dt>事後条件</dt>
+     * <dd>{@link EntityManager#detach(Object)}へ委譲する。</dd>
+     * </dl>
+     */
     @Override
     public void detach(final E entity) {
         manager.detach(entity);
     }
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     * <dl>
+     * <dt>事前条件</dt>
+     * <dd>なし</dd>
+     * <dt>事後条件</dt>
+     * <dd>{@link EntityManager#contains(Object)}へ委譲する。</dd>
+     * </dl>
+     */
     @Override
     public boolean contains(final E entity) {
         return manager.contains(entity);
     }
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     * <dl>
+     * <dt>事前条件</dt>
+     * <dd>なし</dd>
+     * <dt>事後条件</dt>
+     * <dd>{@link TypedQuery#setFirstResult(int)}, {@link TypedQuery#setMaxResults(int)}へ委譲する。</dd>
+     * </dl>
+     */
     @Override
     public TypedQuery<E> createRangeQuery(final TypedQuery<E> query, final int offset,
         final int maxsize) {
         return query.setFirstResult(offset).setMaxResults(maxsize);
     }
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     * <dl>
+     * <dt>事前条件</dt>
+     * <dd>なし</dd>
+     * <dt>事後条件</dt>
+     * <dd>{@link TypedQuery#getResultList()}へ委譲する。</dd>
+     * </dl>
+     */
     @Override
     public Collection<E> findMany(final TypedQuery<E> query) {
         return query.getResultList();
     }
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     * <dl>
+     * <dt>事前条件</dt>
+     * <dd>なし</dd>
+     * <dt>事後条件</dt>
+     * <dd>{@link TypedQuery#getSingleResult()}へ委譲する。</dd>
+     * </dl>
+     */
     @Override
     public E findOne(final TypedQuery<E> query) {
         return query.getSingleResult();
     }
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     * <dl>
+     * <dt>事前条件</dt>
+     * <dd>なし</dd>
+     * <dt>事後条件</dt>
+     * <dd>{@link EntityManager#getProperties()}へ委譲する。</dd>
+     * </dl>
+     */
     @Override
     public Map<String, Object> getProperties() {
         return manager.getProperties();
     }
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     * <dl>
+     * <dt>事前条件</dt>
+     * <dd>なし</dd>
+     * <dt>事後条件</dt>
+     * <dd>{@link EntityManager#setProperty(String, Object)}へ委譲する。</dd>
+     * </dl>
+     */
     @Override
     public void setProperty(final String propertyName, final Object value) {
         manager.setProperty(propertyName, value);

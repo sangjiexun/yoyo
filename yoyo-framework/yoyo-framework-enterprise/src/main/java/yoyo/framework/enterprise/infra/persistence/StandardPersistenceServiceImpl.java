@@ -8,13 +8,16 @@ import java.io.Serializable;
 import javax.enterprise.inject.Default;
 import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
-import yoyo.framework.enterprise.infra.persistence.StandardPersistenceService;
 import yoyo.framework.enterprise.shared.Persistable;
 /**
  * 標準データ永続化サービス(JPA2/JPQL)
  * <p>
  * {@link SimplePersistenceServiceImpl} へJava標準クエリ(JPQL)を追加したサービスである。
  * </p>
+ * <dl>
+ * <dt>不変条件</dt>
+ * <dd>なし</dd>
+ * </dl>
  * @param <E> エンティティ型
  * @param <ID> 識別子オブジェクト型
  * @since JPA 1.0
@@ -27,18 +30,41 @@ public class StandardPersistenceServiceImpl<E extends Persistable<ID>, ID extend
     private static final long serialVersionUID = -1029454631523751121L;
     /**
      * コンストラクタ
+     * <dl>
+     * <dt>事前条件</dt>
+     * <dd>なし</dd>
+     * <dt>事後条件</dt>
+     * <dd>{@link SimplePersistenceServiceImpl#SimplePersistenceServiceImpl(EntityManager, Class)}
+     * へ委譲する。</dd>
+     * </dl>
      * @param manager エンティティマネージャ
      * @param clazz エンティティクラス
      */
     public StandardPersistenceServiceImpl(final EntityManager manager, final Class<E> clazz) {
         super(manager, clazz);
     }
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     * <dl>
+     * <dt>事前条件</dt>
+     * <dd>なし</dd>
+     * <dt>事後条件</dt>
+     * <dd>{@link EntityManager#createQuery(String, Class)}へ委譲する。</dd>
+     * </dl>
+     */
     @Override
     public TypedQuery<E> createQuery(final String jpql) {
         return manager.createQuery(jpql, super.clazz);
     }
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     * <dl>
+     * <dt>事前条件</dt>
+     * <dd>なし</dd>
+     * <dt>事後条件</dt>
+     * <dd>{@link EntityManager#createNamedQuery(String, Class)}へ委譲する。</dd>
+     * </dl>
+     */
     @Override
     public TypedQuery<E> createNamedQuery(final String queryName) {
         return manager.createNamedQuery(queryName, super.clazz);

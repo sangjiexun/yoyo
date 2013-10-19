@@ -6,8 +6,8 @@
 package yoyo.framework.coding;
 import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
+import static yoyo.framework.coding.Hello.*;
 import org.junit.Test;
-import yoyo.framework.coding.Hello;
 /**
  * {@link Hello} のユニットテスト
  * @author nilcy
@@ -16,6 +16,6 @@ import yoyo.framework.coding.Hello;
 public class HelloTest {
     @Test
     public final void test() {
-        assertThat(Hello.sayHello(), is("Hello"));
+        assertThat(sayHello(), is("Hello"));
     }
 }
